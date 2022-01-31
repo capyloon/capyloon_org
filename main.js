@@ -59,6 +59,7 @@ function start() {
   const plausible = Plausible({
     domain: "capyloon.org",
   });
+  plausible.trackPageview();
 }
 
 document.addEventListener("DOMContentLoaded", start, { once: true });
