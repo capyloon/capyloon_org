@@ -1,0 +1,184 @@
+/* CSS reset styles from https://www.joshwcomeau.com/css/custom-css-reset/ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* * {
+  margin: 0;
+} */
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* Custom styles */
+
+:root {
+  --text-color: #e8eaed;
+  --background-color: teal;
+  --grad-start: wheat;
+  --grad-end: orange;
+}
+
+@font-face {
+  font-family: "Lobster";
+  font-style: normal;
+  font-weight: 400;
+  src: local("sans-serif"), url("./Lobster-logo.woff2") format("woff2");
+  font-display: swap;
+}
+
+html {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: monospace, sans-serif;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  padding: 1em;
+}
+
+p {
+  text-align: justify;
+}
+
+.header {
+  font-family: "Lobster", cursive;
+  background: linear-gradient(
+    to bottom right,
+    var(--grad-start),
+    var(--grad-end)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 3rem;
+  line-height: 1.1;
+}
+
+.subtitle {
+  font-size: 1.6rem;
+}
+
+.better-web {
+  font-weight: bolder;
+  color: white;
+}
+
+footer {
+  font-size: smaller;
+  display: flex;
+  border-top: 1px solid var(--text-color);
+  padding: 0.5em;
+}
+
+footer > * {
+  flex: 1;
+}
+
+#privacy-link {
+  text-align: right;
+  cursor: pointer;
+}
+
+#privacy-policy {
+  display: none;
+  position: absolute;
+  background: linear-gradient(
+    to bottom right,
+    var(--grad-start),
+    var(--grad-end)
+  );
+
+  right: 1em;
+  padding: 2em;
+  color: var(--background-color);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#privacy-policy.open {
+  display: initial;
+  transform: translateY(-150%);
+}
+
+a,
+a:visited {
+  color: var(--text-color);
+}
+
+.capyloon {
+  font-family: "Lobster", cursive;
+  font-size: larger;
+
+  background: linear-gradient(
+    to bottom right,
+    var(--grad-start),
+    var(--grad-end)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.screenshots {
+  display: grid;
+  gap: 1em;
+  grid-auto-flow: column;
+  grid-auto-columns: min-content;
+  grid-template-rows: 1fr;
+
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.screenshots > * {
+  scroll-snap-align: start;
+  font-size: smaller;
+  width: 350px;
+  text-align: center;
+}
