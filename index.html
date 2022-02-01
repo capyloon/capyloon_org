@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="description" content="An Experimental Web Based User Agent"/>
+    <meta name="description" content="An Experimental Web Based User Agent" />
     <title>Capyloon - Reclaim Your Web!</title>
     <link rel="stylesheet" href="style.css" />
     <script src="main.js" type="module"></script>
@@ -15,105 +15,144 @@
         <div class="subtitle">Reclaim Your Web!</div>
       </header>
       <div class="filler"></div>
-      <a href="https://matrix.to/#/#capyloon:matrix.org" title="Chat On Matrix"><img width="32px" alt="Chat On Matrix" src="images/matrix-favicon-white.png"/></a>
-      <a href="https://github.com/capyloon" title="Code On Github"><img width="32px"  alt="Code On Github" src="images/GitHub-Mark-Light-32px.png"/></a>
+      <a href="https://matrix.to/#/#capyloon:matrix.org" title="Chat On Matrix">
+        <img
+          width="32px"
+          alt="Chat On Matrix"
+          src="images/matrix-favicon.png"
+        />
+      </a>
+      <a href="https://github.com/capyloon" title="Code On Github">
+        <img
+          width="32px"
+          alt="Code On Github"
+          src="images/GitHub-Mark-64px.png"
+        />
+      </a>
     </div>
 
-    <h3>Why?</h3>
+    <div id="content">
+      <p class="better-web">
+        We believe that a better Web is possible, for the benefit of all: users,
+        content creators, service developers.
+      </p>
 
-    <p class="better-web">
-      We believe a better Web is possible, for the benefit of all: users,
-      content creators, service developers.
-    </p>
+      <p>
+        <span class="capyloon">Capyloon</span> is an experimental user agent
+        that aims to give you what you deserve: freedom from the constraints
+        imposed by a handful of OS vendors and service providers who decide what
+        you can or can't do online, and how.
+      </p>
 
-    <p>
-      Modern mobile OSes like to present themselves as paragons of user
-      friendliness and power. That can't be less true however: for instance, why
-      can't I easily figure out what song was playing from a music service at a
-      given point of a cycling route once home? Of course none of these apps can
-      integrate with all the others - but the current OSes are not able to
-      bridge the gap either.
-    </p>
-    <p>
-      The incumbents mobile OSes favor silos bundling apps with their data for technical
-      and business reasons.
-      Instead, you should to be able to make the most of the data you create and
-      consume when using these services, on your own terms.
-    </p>
-    <p>
-      <span class="capyloon">Capyloon</span> is an experimental user agent that
-      aims to give you what you deserve: being freed from the constraints
-      imposed by a handful of OS vendors and service providers who decide what
-      you can or can't do online, and how.
-    </p>
-    <p>
-      Fortunately, the Web as an application platform offers unique strengths to
-      remedy to these problems. A web runtime has unrivaled capability to
-      leverage your online activity for your benefit. That's why
-      <span class="capyloon">Capyloon</span> is built as a Web based OS,
-      re-using and extending <a href="https://github.com/b2gOS">b2gOS</a>.
-    </p>
-    <p>
-      Because it's still early days and we don't have all the answers,
-      it's important to keep an open mind and to experiment with new ideas.
-      For instance, the current prototype includes early support for the IPFS
-      protocol and for privacy respecting Web Assembly plugins. Can these
-      technologies fit together to provide user control alongside the creation
-      of an ecosystem for creators of content and plugins? What kind of payment
-      system can fit in? What are the UX challenges?
-    </p>
+      <p>
+        Modern mobile OSes like to present themselves as paragons of user
+        friendliness and power. That can't be less true however: for instance,
+        why can't you easily know what song was playing at a given point of a
+        cycling route once home? Of course you can't expect applications to all
+        know about each other - but the current OSes are failing to bridge that
+        gap.
+      </p>
+      <p>
+        Both for business reasons and because of their dated design, the
+        incumbents mobile OSes favor silos bundling applications code with their
+        data.
+      </p>
+      <p>
+        Instead, you should to be able to make the most of the data you create
+        and consume when using these services, on your own terms.
+      </p>
+      <p>
+        Fortunately we have solid foundations to build on: the Web as an
+        application platform offers unique strengths to remedy to these
+        problems. A web runtime has unrivaled capabilitoes to leverage your
+        online activity for your benefit. That's why
+        <span class="capyloon">Capyloon</span> is built as a Web based OS,
+        re-using and extending <a href="https://github.com/b2gOS">b2gOS</a>.
+      </p>
+      <p>
+        It's still early days and we don't have all the answers, so it's
+        important to keep an open mind and to experiment with new ideas. The
+        current prototype starts to explore some: support for the IPFS protocol
+        and for privacy respecting Web Assembly plugins to bring code to your
+        data instead of the other way around.
+      </p>
+      <p>
+        Can these technologies (and others!) fit together to provide user
+        control alongside the creation of an ecosystem for creators of content
+        and plugins? What kind of payment system can fit in? What are the UX
+        challenges?
+      </p>
 
-    <h3>Try it!</h3>
+      <h3>Try it!</h3>
 
-    <h4>Desktop builds</h4>
+      <h4>Desktop builds</h4>
 
-    <div id="desktop-carousel" class="screenshots"></div>
+      <div id="desktop-carousel" class="screenshots"></div>
 
-    <p>
-      You can download the latest release <a href="">from here</a>, and browse
-      <a href="">past versions</a>.
-    </p>
+      <p>
+        You can download the latest release <a href="">from here</a>, and browse
+        <a href="">past versions</a>.
+      </p>
 
-    <h4>Device builds</h4>
+      <h4>Device builds</h4>
 
-    <div id="mobile-carousel" class="screenshots"></div>
+      <div id="mobile-carousel" class="screenshots"></div>
 
-    <p>
-      You can download the latest release <a href="">from here</a>, and browse
-      <a href="">past versions</a>.
-    </p>
+      <p>
+        You can download the latest release <a href="">from here</a>, and browse
+        <a href="">past versions</a>.
+      </p>
 
-    <h3>Join Us</h3>
-    <p>
-      The code is available on <a href="https://github.com/capyloon">github</a>.
-      The main repositories are:
+      <h3>Join Us</h3>
+      <p>
+        The code is available on
+        <a href="https://github.com/capyloon">github</a>. The main repositories
+        are:
+      </p>
+
       <ul>
-        <li><a href="https://github.com/capyloon/nutria">Nutria</a> : This is <span class="capyloon">Capyloon</span> set of web apps.
-            If you are a front-end developer, you will find everything you need in this repository.</li>
-        <li><a href="https://github.com/capyloon/api-daemon">api-daemon</a> : Non standard apis exposed to the UI.
-The <code><a href="https://github.com/capyloon/api-daemon/tree/main/services/contentmanager">contentmanager</a></code> service is specific to <span class="capyloon">Capyloon,</span> and provides the data management layer.</li>
-        <li><a href="https://github.com/capyloon/B2G">B2G</a> : Gonk based devices. The Pixel 3a and Android Generic System Images are currently supported.</li>
+        <li>
+          <a href="https://github.com/capyloon/nutria">Nutria</a> : This is
+          <span class="capyloon">Capyloon</span> set of web apps. If you are a
+          front-end developer, you will find everything you need in this
+          repository.
+        </li>
+        <li>
+          <a href="https://github.com/capyloon/api-daemon">api-daemon</a> : Non
+          standard apis exposed to the UI. The
+          <code
+            ><a
+              href="https://github.com/capyloon/api-daemon/tree/main/services/contentmanager"
+              >contentmanager</a
+            ></code
+          >
+          service is specific to <span class="capyloon">Capyloon,</span> and
+          provides the data management layer.
+        </li>
+        <li>
+          <a href="https://github.com/capyloon/B2G">B2G</a> : Gonk based
+          devices. The Pixel 3a and Android Generic System Images are currently
+          supported.
+        </li>
       </ul>
-    </p>
 
-    <p>
-      Feel free to join the discussion in our
-      <a href="https://matrix.to/#/#capyloon:matrix.org">Matrix chat room</a>,
-      or to <a href="mailto:contact@capyloon.org">email us</a> for any inquiry.
-    </p>
+      <p>
+        Feel free to join the discussion in our
+        <a href="https://matrix.to/#/#capyloon:matrix.org">Matrix chat room</a>,
+        or to <a href="mailto:contact@capyloon.org">email us</a> for any
+        inquiry.
+      </p>
 
-    <p class="better-web">Long Live The Web!</p>
-
-    <footer>
-      <div>&copy; 2022 Capyloon LLC.</div>
-      <div id="privacy-link">
-        Privacy Policy
+      <footer>
+        <div>&copy; 2022 Capyloon LLC.</div>
+        <div id="privacy-link">Privacy Policy</div>
+      </footer>
+      <div id="privacy-policy">
+        We don't track you and use analytics by
+        <a href="https://plausible.io/" target="_blank" rel="noopener"
+          >Plausible</a
+        >.
       </div>
-    </footer>
-    <div id="privacy-policy">
-        We don't track you.
-        <br/>
-        Analytics by <a href="https://plausible.io/" target="_blank" rel="noopener">Plausible</a>.
     </div>
   </body>
 </html>

@@ -19,6 +19,13 @@ body {
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  display: flex;
+  flex-direction: column;
+}
+
+#content {
+  overflow-y: scroll;
+  padding: 1em;
 }
 
 img,
@@ -55,9 +62,9 @@ h6 {
 /* Custom styles */
 
 :root {
-  --text-color: #e8eaed;
-  --background-color: teal;
-  --grad-start: wheat;
+  --text-color: darkslategray;
+  --background-color: wheat;
+  --grad-start: red;
   --grad-end: orange;
 }
 
@@ -72,18 +79,14 @@ h6 {
 html {
   background-color: var(--background-color);
   color: var(--text-color);
-  font-family: monospace, sans-serif;
+  /* font-family: monospace, sans-serif; */
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
 }
 
 body {
-  padding: 1em;
-}
-
-p {
-  text-align: justify;
+  background: linear-gradient(to bottom right, wheat, white);
 }
 
 .header {
@@ -104,8 +107,16 @@ p {
 }
 
 .better-web {
+  font-family: initial;
   font-weight: bolder;
-  color: white;
+  font-size: x-large;
+  color: teal;
+  text-align: center;
+}
+
+p,
+li {
+  font-family: monospace, sans-serif;
 }
 
 footer {
@@ -133,16 +144,17 @@ footer > * {
     var(--grad-end)
   );
 
-  right: 1em;
+  right: 2em;
+  bottom: 4em;
   padding: 2em;
   color: var(--background-color);
   border-radius: 10px;
   cursor: pointer;
+  max-width: 60vw;
 }
 
 #privacy-policy.open {
   display: initial;
-  transform: translateY(-150%);
 }
 
 a,
@@ -185,6 +197,8 @@ a:visited {
 
 #top {
   display: flex;
+  align-items: center;
+  padding: 1em;
 }
 
 #top a {
