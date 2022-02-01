@@ -182,3 +182,15 @@ a:visited {
   width: 350px;
   text-align: center;
 }
+
+#top {
+  display: flex;
+}
+
+#top a {
+  margin-left: 32px;
+}
+
+.filler {
+  flex: 1;
+}

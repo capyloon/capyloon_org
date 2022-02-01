@@ -47,12 +47,10 @@ function start() {
   let privacyPolicy = document.getElementById("privacy-policy");
 
   privacyLink.onclick = () => {
-    console.log(`Display privacy policy`);
     privacyPolicy.classList.add("open");
   };
 
   privacyPolicy.onclick = () => {
-    console.log(`Hide privacy policy`);
     privacyPolicy.classList.remove("open");
   };
 
