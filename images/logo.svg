@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.1 (26b7af14f2, 2022-01-19)"
+   sodipodi:docname="logo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.61647026"
+     inkscape:cx="321.99445"
+     inkscape:cy="561.25984"
+     inkscape:window-width="1561"
+     inkscape:window-height="872"
+     inkscape:window-x="39"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient10276">
+      <stop
+         style="stop-color:#ff0000;stop-opacity:1"
+         offset="0"
+         id="stop10272" />
+      <stop
+         style="stop-color:#ffa500;stop-opacity:1"
+         offset="1"
+         id="stop10274" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient852">
+      <stop
+         style="stop-color:#f5deb3;stop-opacity:1"
+         offset="0"
+         id="stop848" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0.99641275"
+         offset="1"
+         id="stop850" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient852"
+       id="linearGradient886"
+       x1="46.169258"
+       y1="74.373184"
+       x2="108.00323"
+       y2="136.69374"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient10276"
+       id="linearGradient10240"
+       x1="54.798874"
+       y1="158.0945"
+       x2="86.24099"
+       y2="203.33748"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.87060079,0,0,0.87060079,15.430674,-51.288763)" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <circle
+       style="fill:url(#linearGradient886);stroke-width:1;fill-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;stroke:#f5deb3;stroke-opacity:0.99607843"
+       id="path846"
+       cx="76.768661"
+       cy="105.521"
+       r="30.599401"
+       inkscape:export-filename="/home/fabrice/dev/capyloon/capyloon_org/images/logo_256.png"
+       inkscape:export-xdpi="104.54221"
+       inkscape:export-ydpi="104.54221" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:52.3726px;line-height:1.25;font-family:Lobster;-inkscape-font-specification:'Lobster, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:url(#linearGradient10240);fill-opacity:1;stroke:none;stroke-width:1.31138;stroke-miterlimit:4;stroke-dasharray:none"
+       x="62.261452"
+       y="124.74174"
+       id="text2280"
+       inkscape:export-filename="/home/fabrice/dev/capyloon/capyloon_org/images/logo_256.png"
+       inkscape:export-xdpi="104.54221"
+       inkscape:export-ydpi="104.54221"><tspan
+         sodipodi:role="line"
+         id="tspan2278"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:52.3726px;font-family:Lobster;-inkscape-font-specification:'Lobster, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:url(#linearGradient10240);fill-opacity:1;stroke-width:1.31138;stroke-miterlimit:4;stroke-dasharray:none"
+         x="62.261452"
+         y="124.74174">C</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="130.44936"
+       y="160.57384"
+       id="text7054"><tspan
+         sodipodi:role="line"
+         id="tspan7052"
+         style="stroke-width:0.264583"
+         x="130.44936"
+         y="160.57384" /></text>
+  </g>
+</svg>
