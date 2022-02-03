@@ -48,10 +48,25 @@ function start() {
 
   privacyLink.onclick = () => {
     privacyPolicy.classList.add("open");
+    privacyPolicy.focus();
+  };
+
+  privacyLink.onkeydown = (event) => {
+    if (event.key === "Enter") {
+      privacyPolicy.classList.add("open");
+      privacyPolicy.focus();
+    }
   };
 
   privacyPolicy.onclick = () => {
     privacyPolicy.classList.remove("open");
+  };
+
+  privacyPolicy.onkeydown = (event) => {
+    if (event.key === "Enter") {
+      privacyPolicy.classList.remove("open");
+      privacyLink.focus();
+    }
   };
 
   const plausible = Plausible({
