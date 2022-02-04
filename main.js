@@ -1,7 +1,11 @@
 import Plausible from "./plausible/index.js";
 
-function start() {
+function loadImages() {
   let carousel = document.getElementById("desktop-carousel");
+  if (!carousel) {
+    return;
+  }
+
   let desktopImages = [
     "Homescreen",
     "Quick Settings",
@@ -42,6 +46,10 @@ function start() {
     }.webp" alt="${desc}" title="${desc}"/><div>${desc}</div>`;
     carousel.append(item);
   });
+}
+
+function start() {
+  loadImages();
 
   let privacyLink = document.getElementById("privacy-link");
   let privacyPolicy = document.getElementById("privacy-policy");
