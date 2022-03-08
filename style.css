@@ -215,3 +215,9 @@ a:visited {
 .filler {
   flex: 1;
 }
+
+code {
+  background-color: lightgray;
+  border: 3px solid lightgray;
+  border-radius: 3px;
+}
