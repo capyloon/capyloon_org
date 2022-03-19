@@ -221,3 +221,13 @@ code {
   border: 3px solid lightgray;
   border-radius: 3px;
 }
+
+video {
+  max-width: 300px;
+  border: 1px solid currentColor;
+  border-radius: 5px;
+}
+
+h3 {
+  border-bottom: 2px solid currentColor;
+}
