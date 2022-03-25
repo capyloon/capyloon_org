@@ -26,6 +26,7 @@ body {
 #content {
   overflow-y: scroll;
   padding: 1em;
+  padding-top: 0;
 }
 
 img,

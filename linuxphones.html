@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="An Experimental Web Based User Agent" />
+    <title>Capyloon - Reclaim Your Web! - Linux Phones Support</title>
+    <link rel="icon" href="images/logo_64.png" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" type="module"></script>
+  </head>
+  <body>
+    <div id="top">
+      <a class="header" href="/">
+        <div class="title">Capyloon</div>
+        <div class="subtitle">Reclaim Your Web!</div>
+      </a>
+      <div class="filler"></div>
+      <a href="https://matrix.to/#/#capyloon:matrix.org" title="Chat On Matrix">
+        <img
+          width="32px"
+          alt="Chat On Matrix"
+          src="images/matrix-favicon.png"
+        />
+      </a>
+      <a href="https://github.com/capyloon" title="Code On Github">
+        <img
+          width="32px"
+          alt="Code On Github"
+          src="images/GitHub-Mark-64px.png"
+        />
+      </a>
+      <a href="https://twitter.com/capyloon" title="Follow Us On Twitter">
+        <img
+          width="32px"
+          alt="Follow Us On Twitter"
+          src="images/2021 Twitter logo - black.png"
+        />
+      </a>
+    </div>
+
+    <div id="content">
+      <h1>Mainline Linux Phones</h1>
+
+      <h3 id="devices">Supported Devices</h3>
+      <p>
+        The 2 supported devices are the
+        <a href="https://www.pine64.org/pinephonepro/">PinePhone Pro</a> and the
+        <a href="https://puri.sm/products/librem-5/">Librem 5</a>. The original
+        Pinephone can likely use the same Debian package as the Pinephone Pro,
+        but its outdated chipset is not powerful enough for a decent user
+        experience.
+      </p>
+
+      <h3 id="install">Running Capyloon</h3>
+      <p>
+        Full images are not yet available, but a Debian package is available to
+        install and run <span class="capyloon">Capyloon</span> on top of a
+        <a href="https://mobian.org">Mobian</a> image.
+      </p>
+
+      <p>Follow this steps to test it:</p>
+      <ul>
+        <li>
+          Download the debian package for your device:
+          <a
+            href="https://dweb.link/ipfs/bafybeib4dyfvgh2yfh2gp5v7f3jluis7q4mkk7o5nyscdjwrlkm7kuwaga"
+            >PinePhone Pro</a
+          >
+          or
+          <a
+            href="https://dweb.link/ipfs/bafybeibdvp6jm26fbmk5r6ocui7zjvhzx7ccjy3jnv3wyrjmxi3jimwr4q"
+            >Librem 5</a
+          >
+        </li>
+        <li>
+          Install the package with
+          <code>sudo dpkg -i &lt;path-to-file&gt;</code>
+        </li>
+        <li>Stop Phosh with <code>sudo systemctl stop phosh</code></li>
+        <li>
+          Start <span class="capyloon">Capyloon</span> with
+          <code>sudo systemctl start b2gos</code>
+        </li>
+      </ul>
+
+      <p>
+        If you wish to directly boot into
+        <span class="capyloon">Capyloon</span>, you need to disable Phosh:
+        <code>sudo systemctl disable phosh && sudo systemctl enable b2gos</code
+        >.
+      </p>
+
+      <h3 id="status">Status</h3>
+      <p>
+        Several APIs needed for a full phone experience are not yet implemented
+        on mainline Linux, and some have partial implementations:
+      </p>
+      <ul>
+        <li>Audio channel management.</li>
+        <li>Wifi (partial).</li>
+        <li>Telephony (calls, data, sms, mms).</li>
+        <li>Bluetooth.</li>
+        <li>GPS.</li>
+        <li>Other sensors (orientation, proximity, etc.).</li>
+      </ul>
+
+      <p>
+        Rebuilding a debian package after making UI changes is possible with the
+        <code>jackady</code> tool from the
+        <a href="https://github.com/capyloon/nutria">Nutria</a> repository:
+      </p>
+      <ul>
+        <li>
+          Fetch the linux aarch64 prebuilts:
+          <code
+            >./jackady update-prebuilts --target=aarch64-unknown-linux-gnu</code
+          >
+        </li>
+        <li>
+          Rebuild the deb: <code>./jackady deb --device=pinephone|librem5</code>
+        </li>
+      </ul>
+      <p>
+        To make it easier to update the UI, several
+        <code>jackady</code> commands
+        <a href="https://github.com/capyloon/nutria/issues/23"
+          >will be updated</a
+        >
+        to support Linux mainline devices in addition to the Gonk ones.
+      </p>
+
+      <footer>
+        <div>&copy; 2022 Capyloon LLC.</div>
+        <div id="privacy-link" tabindex="0">Privacy Policy</div>
+      </footer>
+      <div id="privacy-policy" tabindex="0">
+        We don't track you and use analytics by
+        <a href="https://plausible.io/" target="_blank" rel="noopener"
+          >Plausible</a
+        >.
+      </div>
+    </div>
+  </body>
+</html>
