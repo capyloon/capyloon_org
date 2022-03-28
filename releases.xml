@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title>Capyloon Releases</title>
+  <link rel="alternate" href="https://capyloon.org/releases.html"/>
+  <!-- Date generated with date +%FT%T%Z -->
+  <updated>2022-03-27T12:25:48PDT</updated>
+  <author>
+    <name>The Capyloon Team</name>
+  </author>
+  <id>https://capyloon.org/releases.html</id>
+  <icon>/images/logo_64.png</icon>
+
+  <entry>
+    <title>Fri 25 March 2022</title>
+    <link rel="alternate" href="https://capyloon.org/releases.html#march-25"/>
+    <id>https://capyloon.org/releases.html#march-25</id>
+    <updated>2022-03-25T00:00:00Z</updated>
+    <summary type="html">
+&lt;h4&gt;Changelog&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+Debian packages are available for Linux phones! Check the
+&lt;a href="linuxphones.html"&gt;dedicated page&lt;/a&gt; for details.
+&lt;/li&gt;
+&lt;li&gt;Minor performance fixes and UX polish changes.&lt;/li&gt;
+&lt;/ul&gt;
+    </summary>
+  </entry>
+
+  <entry>
+    <title>Fri 18 March 2022</title>
+    <link rel="alternate" href="https://capyloon.org/releases.html#march-18"/>
+    <id>https://capyloon.org/releases.html#march-18</id>
+    <updated>2022-03-18T00:00:00Z</updated>
+    <summary type="html">
+&lt;h4&gt;Changelog&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+The First Time Use experience now features these panels: Language,
+Wi-Fi, Date &amp; Time, Privacy, Search engines and Display. 
+&lt;li&gt;
+As seen in one of the FTU panels, it's now possible to configure
+search engines. If you are browsing a page initiated by a keyword
+search, you can choose a different search engine from the site info
+panel, making it easy to switch from one to another. We also
+automatically add new engines based on your navigation.
+&lt;/li&gt;
+&lt;li&gt;
+There is a "Tor" toggle in the Privacy panel of the FTU, to enable
+initial Tor support based on
+&lt;a href="https://gitlab.torproject.org/tpo/core/arti"&gt;Arti&lt;/a&gt;. You
+can also turn it on and off from the Quick Settings panel.
+&lt;/li&gt;
+&lt;/ul&gt;
+    </summary>
+  </entry>
+
+  <entry>
+    <title>Tue 8 March 2022</title>
+    <link rel="alternate" href="https://capyloon.org/releases.html#march-08"/>
+    <id>https://capyloon.org/releases.html#march-08</id>
+    <updated>2022-03-08T00:00:00Z</updated>
+    <summary type="html">
+&lt;h4&gt;Changelog&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+Initial release of the First Time Use app, using
+&lt;a href="https://shoelace.style"&gt;Shoelace components&lt;/a&gt;.
+&lt;/li&gt;
+&lt;li&gt;
+MacOS M1 (x86_64) prebuilts are now available for desktop users.
+&lt;/li&gt;
+&lt;/ul&gt;
+    </summary>
+  </entry>
+
+  <entry>
+    <title>Tue 22 Feb 2022</title>
+    <link rel="alternate" href="https://capyloon.org/releases.html#feb-22"/>
+    <id>https://capyloon.org/releases.html#feb-22</id>
+    <updated>2022-02-22T00:00:00Z</updated>
+    <summary type="html">
+&lt;h4&gt;Changelog&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;The virtual keyboard can now always be dismissed.&lt;/li&gt;
+&lt;li&gt;
+    A &lt;code&gt;jackady new-app&lt;/code&gt; command was added to scaffold new apps.
+&lt;/li&gt;
+&lt;/ul&gt;
+    </summary>
+  </entry>
+
+  <entry>
+    <title>Thu 17 Feb 2022</title>
+    <link rel="alternate" href="https://capyloon.org/releases.html#feb-17"/>
+    <id>https://capyloon.org/releases.html#feb-17</id>
+    <updated>2022-02-17T00:00:00Z</updated>
+    <summary type="html">
+&lt;h4&gt;Changelog&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+MacOS M1 (aarch64) prebuilts are now available for desktop users.
+&lt;/li&gt;
+&lt;/ul&gt;
+    </summary>
+  </entry>
+
+  <entry>
+    <title>Thu 03 Feb 2022</title>
+    <link rel="alternate" href="https://capyloon.org/releases.html#feb-03"/>
+    <id>https://capyloon.org/releases.html#feb-03</id>
+    <updated>2022-02-03T00:00:00Z</updated>
+    <summary type="html">
+&lt;h4&gt;Changelog&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Initial release!&lt;/li&gt;
+&lt;/ul&gt;
+    </summary>
+  </entry>
+
+
+
+</feed>
