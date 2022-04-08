@@ -12,6 +12,27 @@
   <icon>/images/logo_64.png</icon>
 
   <entry>
+    <title>Fri 08 April 2022</title>
+    <link rel="alternate" href="https://capyloon.org/releases.html#april-08"/>
+    <id>https://capyloon.org/releases.html#april-08</id>
+    <updated>2022-04-08:00:00Z</updated>
+    <summary type="html">
+&lt;h4&gt;Changelog&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+Improved Web Extensions support: installation of recommended extensions from
+the FTU, and management from the settings app.
+&lt;/li&gt;
+&lt;li&gt;UX cleanup of the "page crashed" and network error pages.&lt;/li&gt;
+&lt;li&gt;
+Implementation of the missing app management commands for Linux Phones,
+making them as easy to work with as the Gonk based devices.
+&lt;/li&gt;
+&lt;/ul&gt;
+    </summary>
+  </entry>
+
+  <entry>
     <title>Fri 25 March 2022</title>
     <link rel="alternate" href="https://capyloon.org/releases.html#march-25"/>
     <id>https://capyloon.org/releases.html#march-25</id>
