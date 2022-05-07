@@ -86,7 +86,7 @@
       <h3 id="create">Creating Content</h3>
       <p>
         Because IPFS is using content based addressing instead of names, it's
-        possible to create content and publish it directly. This is exposed by
+        possible to create content and publish it directly. This is exposed in
         Capyloon to any web page through the "publish-to-ipfs" Web Activity:
       </p>
 
@@ -101,9 +101,11 @@
           let activity = new WebActivity("publish-to-ipfs", { name, blob});
           activity.start();</pre>
 
-      <p>You can use this form to create your own content:</p>
+      <h3 id="publish">IPFS Playground</h3>
       <div class="ipfs-playground">
+        <label for="ipfs-name">File name:</label>
         <input id="ipfs-name" placeholder="file name" />
+        <label for="ipfs-content">Content:</label>
         <textarea id="ipfs-content" rows="10"></textarea>
         <button id="ipfs-publish">Publish</button>
       </div>
