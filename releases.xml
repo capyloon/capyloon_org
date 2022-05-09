@@ -12,6 +12,33 @@
   <icon>/images/logo_64.png</icon>
 
   <entry>
+    <title>Mon 09 May 2022</title>
+    <link rel="alternate" href="https://capyloon.org/releases.html#may-09"/>
+    <id>https://capyloon.org/releases.html#may-09</id>
+    <updated>2022-05-09:00:00Z</updated>
+    <summary type="html">
+&lt;h4&gt;Changelog&lt;/h4&gt;
+This release focuses on making it straightforward to publish content to
+the IPFS network, both for files managed in Capyloon and for 3rd party web pages:
+&lt;ul&gt;
+&lt;li&gt;
+Several additions to the actions of the context menu like downloading
+images and saving pages as PDF.
+&lt;/li&gt;
+&lt;li&gt;
+One click upload to IPFS from the the Files application, either as
+publicly available resources or protected by a password. A link to the
+IPFS resource is then shared using a QR Code.
+&lt;/li&gt;
+&lt;li&gt;
+Capyloon exposes a Web Activity that allow any web page to publish a
+file to IPFS.
+&lt;/li&gt;
+&lt;/ul&gt;
+    </summary>
+  </entry>
+
+  <entry>
     <title>Fri 08 April 2022</title>
     <link rel="alternate" href="https://capyloon.org/releases.html#april-08"/>
     <id>https://capyloon.org/releases.html#april-08</id>
