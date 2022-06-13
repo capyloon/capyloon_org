@@ -39,10 +39,6 @@ this case accessing a subset of the local virtual filesystem), and for
 how long this access is valid. The site is then responsible for
 presenting this UCAN token when using the VFS api.
 &lt;/p&gt;
-&lt;p&gt;
-Further work will improve user management of the UCAN tokens, allowing
-selective revocation for instance.
-&lt;/p&gt;
     </summary>
   </entry>
 
