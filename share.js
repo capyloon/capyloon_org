@@ -74,7 +74,7 @@ document.addEventListener(
         console.log(`Will decrypt with password ${window.password.value}`);
 
         let secrets = new PasswordBasedSecret(window.password.value);
-        let ipfsUrl = `https://${cid}.ipfs.dweb.link`;
+        let ipfsUrl = `https://${cid}.ipfs.cloudflare-ipfs.com`;
         try {
           let response = await fetch(ipfsUrl);
           let buffer = await response.arrayBuffer();
