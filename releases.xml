@@ -12,6 +12,42 @@
   <icon>/images/logo_64.png</icon>
 
   <entry>
+    <title>Tue 27 September 2022</title>
+    <link rel="alternate" href="https://capyloon.org/releases.html#sept-27"/>
+    <id>https://capyloon.org/releases.html#sept-27</id>
+    <updated>2022-09-27:00:00Z</updated>
+    <summary type="html">
+&lt;h4&gt;Changelog&lt;/h4&gt;
+&lt;p&gt;
+The major change in this release is the integration of a full IPFS node:
+Capyloon now bundles a forked version of
+&lt;a href="https://github.com/n0-computer/iroh"&gt;Iroh&lt;/a&gt;. This allows
+Capyloon to verify locally the integrity of &lt;code&gt;ipfs://&lt;/code&gt; and
+&lt;code&gt;ipns://&lt;/code&gt;
+resources when loaded in the browser. To achieve this, the Gecko native
+protocol handler has been updated to retrieve content from the local
+node over a Unix Domain Socket. The node itself races block fetches from
+the p2p swarm with raw CID fetches from a http gateway for optimal
+performance.
+&lt;/p&gt;
+&lt;p&gt;Other notable changes in this release include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+    The camera app exposes a Web Activity to capture QR Codes. This is
+    leveraged by the home screen to provide a quick access to a URL
+    scanner. This also works in desktop builds using your webcam.
+    &lt;img src="images/homescreen-qr.png" style="width: 50%" /&gt;
+&lt;/li&gt;
+&lt;li&gt;
+    The settings app was re-written to use
+    &lt;a href="https://shoelace.style"&gt;Shoelace&lt;/a&gt; components.
+&lt;/li&gt;
+&lt;li&gt;The usual set of random bug fixes :)&lt;/li&gt;
+&lt;/ul&gt;
+    </summary>
+  </entry>
+
+  <entry>
     <title>Fri 10 June 2022</title>
     <link rel="alternate" href="https://capyloon.org/releases.html#june-10"/>
     <id>https://capyloon.org/releases.html#june-10</id>

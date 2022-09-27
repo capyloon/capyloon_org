@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.1 (9c6d41e, 2022-07-14)"
+   sodipodi:docname="sticker_logo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.5946522"
+     inkscape:cx="347.26181"
+     inkscape:cy="466.65933"
+     inkscape:window-width="1384"
+     inkscape:window-height="847"
+     inkscape:window-x="56"
+     inkscape:window-y="25"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient1006">
+      <stop
+         style="stop-color:#ff0000;stop-opacity:1;"
+         offset="0"
+         id="stop1002" />
+      <stop
+         style="stop-color:#ffa500;stop-opacity:1;"
+         offset="1"
+         id="stop1004" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1006"
+       id="linearGradient1008"
+       x1="34.121057"
+       y1="96.907332"
+       x2="174.66178"
+       y2="96.907332"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(2.2246898,-28.920967)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1006"
+       id="linearGradient5786"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(2.6696278,33.370347)"
+       x1="34.121057"
+       y1="96.907332"
+       x2="174.66178"
+       y2="96.907332" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#f5deb3;fill-opacity:1;stroke:#ffffff;stroke-width:2.64917;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       id="rect3966"
+       width="156.96901"
+       height="57.747818"
+       x="29.635431"
+       y="101.27044" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:39.5111px;font-family:Lobster;-inkscape-font-specification:'Lobster, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:url(#linearGradient5786);fill-opacity:1;stroke:none;stroke-width:0.265;stroke-dasharray:none;stroke-opacity:1"
+       x="36.039974"
+       y="140.15546"
+       id="text142"><tspan
+         sodipodi:role="line"
+         id="tspan140"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:39.5111px;font-family:Lobster;-inkscape-font-specification:'Lobster, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:url(#linearGradient5786);fill-opacity:1;stroke:none;stroke-width:0.265;stroke-dasharray:none;stroke-opacity:1"
+         x="36.039974"
+         y="140.15546">Capyloon</tspan></text>
+  </g>
+</svg>

@@ -44,6 +44,77 @@
     <div id="content">
       <h1>Releases</h1>
 
+      <h3 id="sept-27">Tue 27 September 2022</h3>
+
+      <h4>Changelog</h4>
+      <p>
+        The major change in this release is the integration of a full IPFS node:
+        Capyloon now bundles a forked version of
+        <a href="https://github.com/n0-computer/iroh">Iroh</a>! This allows
+        Capyloon to verify locally the integrity of <code>ipfs://</code> and
+        <code>ipns://</code>
+        resources loaded by the browser. To achieve this, the Gecko native
+        protocol handler has been updated to retrieve content from the local
+        node over a Unix Domain Socket. The node itself races block fetches from
+        the p2p swarm with raw CID fetches from a http gateway for optimal
+        performance.
+      </p>
+      <p>Other notable changes in this release include:</p>
+      <ul>
+        <li>
+          The camera app exposes a Web Activity to capture QR Codes. This is
+          leveraged by the home screen to provide a quick access to a URL
+          scanner. This also works in desktop builds using your webcam.
+          <img src="images/homescreen-qr.png" style="width: 50%" />
+        </li>
+        <li>
+          The settings app was re-written to use
+          <a href="https://shoelace.style">Shoelace</a> components.
+        </li>
+        <li>The usual set of random bug fixes :)</li>
+      </ul>
+
+      <h4>Downloads</h4>
+      In addition to testing on devices with these packages, you can also run
+      Capyloon on Mac and Linux by following
+      <a href="https://github.com/capyloon/nutria#quick-start">these steps</a>.
+      <ul>
+        <li>
+          <a
+            href="https://bafybeihxxf7b3tbulpvvmnopto25igvffpq54fz2dqcoozsqekrqcfjqhy.ipfs.w3s.link/ipfs/bafybeihxxf7b3tbulpvvmnopto25igvffpq54fz2dqcoozsqekrqcfjqhy/capyloon-desktop_x86_64-unknown-linux-gnu_0.2.deb"
+            >Debian amd64 Package</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://bafybeibp5n4i4prroxfr5zc24l6yjy62m4om2g746azwulkzvlddf5c5yq.ipfs.w3s.link/ipfs/bafybeibp5n4i4prroxfr5zc24l6yjy62m4om2g746azwulkzvlddf5c5yq/capyloon-pinephone_aarch64-unknown-linux-gnu_0.2.deb"
+            >Mobian PinePhone Pro Package</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://bafybeigsfilg4crs4svyu6xnemdhludnxd6f5ernpxscw5umhmtczhyulq.ipfs.w3s.link/ipfs/bafybeigsfilg4crs4svyu6xnemdhludnxd6f5ernpxscw5umhmtczhyulq/capyloon-librem5_aarch64-unknown-linux-gnu_0.2.deb"
+            >Mobian Librem 5 Package</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://bafybeihj277cdsuuz5ars3ug25wodi7447laetgctczayjysotxdvq5dvy.ipfs.w3s.link/ipfs/bafybeihj277cdsuuz5ars3ug25wodi7447laetgctczayjysotxdvq5dvy/sargo.tar.xz"
+            >Pixel 3a (sargo) Image</a
+          >
+          (sha256:
+          7036ba1e00a44f0273060131b49dbd555d32b4b563f405e75f816bfa3e5e1b5b)
+        </li>
+        <li>
+          <a
+            href="https://bafybeihglnbqbbtf4dlztl32w53ejs2pfpyoczdvtr36kdsgr57xxfkpom.ipfs.w3s.link/ipfs/bafybeihglnbqbbtf4dlztl32w53ejs2pfpyoczdvtr36kdsgr57xxfkpom/gsi.tar.xz"
+            >Android 10 Generic System Image</a
+          >
+          (A/B arm64, sha256:
+          291869159527408a06ab6ae08d1bd69b11999863b32137a8126813d308c7bc5f)
+        </li>
+      </ul>
+
       <h3 id="june-10">Fri 10 June 2022</h3>
 
       <h4>Changelog</h4>
