@@ -1,0 +1,37 @@
+/* Capyloon specific styling for reveal.js presentations */
+
+@font-face {
+  font-family: "Readex Pro";
+  src: url(./fonts/Readex_Pro/ReadexPro-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: "Lobster";
+  font-style: normal;
+  font-weight: 400;
+  src: local("sans-serif"), url("./fonts/Lobster-logo.woff2") format("woff2");
+  font-display: swap;
+}
+
+:root {
+  --r-main-font: "Readex Pro", sans-serif;
+  --r-background-color: wheat;
+
+  --grad-start: red;
+  --grad-end: orange;
+}
+
+.reveal-viewport {
+  background: linear-gradient(to bottom right, wheat, white);
+}
+
+/* specific to January 2023 release */
+
+.logo {
+  width: 50vw;
+  height: auto;
+}
+
+section img {
+  height: 40vh;
+}

@@ -12,6 +12,43 @@
   <icon>/images/logo_64.png</icon>
 
   <entry>
+    <title>Fri 20 January 2023</title>
+    <link rel="alternate" href="https://capyloon.org/releases.html#jan-20-2023"/>
+    <id>https://capyloon.org/releases.html#jan-20-2023</id>
+    <updated>2023-01-20:00:00Z</updated>
+    <summary type="html">
+&lt;p&gt;This release introduces several new features:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    Easy data sharing between devices: not only page urls, but also files
+    and contacts. For files and contacts, the payload is encrypted and
+    published to IPFS with local discovery and transfer.
+  &lt;/li&gt;
+  &lt;li&gt;
+    Homescreen switcher support: alternate launchers are cool, and also
+    useful to adapt to different form factors. As an example, Capyloon now
+    includes a simple Media Center Homescreen. Thanks to
+    &lt;a href="https://twitter.com/MortCodesWeb"&gt;@MortCodesWeb&lt;/a&gt; for
+    making it look so nice!
+  &lt;/li&gt;
+  &lt;li&gt;
+    The contacts app was re-written. It now has a better look and feel,
+    and showcases easy import/export of contacts over IPFS.
+  &lt;/li&gt;
+  &lt;li&gt;
+    We now generate installer images for the PinePhone Pro. You can
+    downloading it from our
+    &lt;a href="https://debian.capyloon.org/images/installer/"
+      &gt;image repository&lt;/a
+    &gt;.
+  &lt;/li&gt;
+&lt;/ul&gt;
+You can find screenshots about these features
+&lt;a href="https://capyloon.org/docs/slides/release-jan-2023/index.html"&gt;here.&lt;/a&gt;
+    </summary>
+  </entry>  
+
+  <entry>
     <title>Tue 27 September 2022</title>
     <link rel="alternate" href="https://capyloon.org/releases.html#sept-27"/>
     <id>https://capyloon.org/releases.html#sept-27</id>
