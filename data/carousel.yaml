@@ -1,0 +1,37 @@
+images:
+  - image: /screenshots/mobile-1.webp
+    content_html: "Mobile Lockscreen"
+  - image: /screenshots/mobile-2.webp
+    content_html: "Mobile Homescreen"
+  - image: /screenshots/mobile-3.webp
+    content_html: "Mobile quick settings"
+  - image: /screenshots/mobile-4.webp
+    content_html: "Mobile Latest Activity"
+  - image: /screenshots/mobile-5.webp
+    content_html: "Mobile installed apps"
+  - image: /screenshots/mobile-6.webp
+    content_html: "Mobile Carousel View"
+  - image: /screenshots/mobile-7.webp
+    content_html: "Mobile uBlockOrigin Panel"
+  - image: /screenshots/mobile-8.webp
+    content_html: "Mobile Page Information"
+  - image: /screenshots/desktop-1.webp
+    content_html: "Homescreen"
+  - image: /screenshots/desktop-2.webp
+    content_html: "Quick Settings"
+  - image: /screenshots/desktop-3.webp
+    content_html: "Latest Activity"
+  - image: /screenshots/desktop-4.webp
+    content_html: "Installed Apps"
+  - image: /screenshots/desktop-5.webp
+    content_html: "Terminal App"
+  - image: /screenshots/desktop-6.webp
+    content_html: "Carousel View"
+  - image: /screenshots/desktop-7.webp
+    content_html: "Image Processing Plugins"
+  - image: /screenshots/desktop-8.webp
+    content_html: "uBlockOrigin Panel"
+  - image: /screenshots/desktop-9.webp
+    content_html: "Page Information"
+  - image: /screenshots/desktop-10.webp
+    content_html: "Split Screen Mode"
