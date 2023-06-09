@@ -12,6 +12,93 @@
   <icon>/images/logo_64.png</icon>
 
   <entry>
+    <title>Fri 09 June 2023</title>
+    <link rel="alternate" href="https://capyloon.org/releases.html#jun-09-2023"/>
+    <id>https://capyloon.org/releases.html#jun-09-2023</id>
+    <updated>2023-06-09:00:00Z</updated>
+    <summary type="html">
+&lt;h4&gt;Features&lt;/h4&gt;
+&lt;p&gt;
+  This release introduces several new features that have been brewing for
+  a while! We are pushing use cases that blend peer discovery with a novel
+  app model called &lt;strong&gt;Web Tiles&lt;/strong&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;strong&gt;Peer discovery&lt;/strong&gt; in your local network is now more user
+  friendly, and integrated in the address book and sharing app. That let
+  you directly select the peer to share data with in addition to QR Code
+  support.
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;strong&gt;Web Tiles&lt;/strong&gt; is a new application model that aims to solve
+  some of the security & privacy challenges of Web Apps. Tiles are:
+&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    Immutable: a Tile is a bundle of resources identified using content
+    addressing. Our current implementation uses a tile:// protocol which
+    is similar to the ipfs:// one.
+  &lt;/li&gt;
+  &lt;li&gt;
+    Safe by default: a tile can't fetch foreign content. This is enforced
+    by a default CSP applied to all tile:// url loads.
+  &lt;/li&gt;
+  &lt;li&gt;
+    Powerful: because they can't leak data to external parties, tiles can
+    be granted access to what are usually considered "dangerous" APIs.
+  &lt;/li&gt;
+  &lt;li&gt;
+    Installable and usable offline: being content addressed and
+    local-only, tiles are naturally suited for offline use.
+  &lt;/li&gt;
+  &lt;li&gt;
+    Composable: being installed, tiles can register Web Activities like
+    other installed Capyloon apps. This make them ideal candidates to
+    bridge the Http web with new capabilities.
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+  Because of their safety and location independence characteristics,
+  &lt;strong&gt;Web Tiles&lt;/strong&gt; are well suited for "just in time"
+  application transfer and execution from one peer to another.
+&lt;/p&gt;
+&lt;p&gt;
+  We put together peer discovery and &lt;strong&gt;Web Tiles&lt;/strong&gt; with a
+  demo showing a video player: the initiating device sends the player app
+  to its peer, and launches the same tile locally. Because tiles are safe,
+  there is no risk with running one on the receiving side. Both ends can
+  then exchange messages, creating an ad-hoc distributed app. This is of
+  course usable for all kind of multi-device use cases: multiplayer games,
+  remote access to another device content or APIs, etc.
+&lt;/p&gt;
+&lt;p&gt;
+  Here's a video showcasing these features:
+  &lt;video
+    controls
+    style="max-width: 600px"
+    src="./videos/capyloon-may-2023-render.mp4"
+  &gt;&lt;/video&gt;
+&lt;/p&gt;
+&lt;h4&gt;Device Support&lt;/h4&gt;
+&lt;p&gt;
+  On the device side, we finally have &lt;strong&gt;full images&lt;/strong&gt; for the
+  PinephonePro and the Librem5!
+&lt;/p&gt;
+&lt;p&gt;
+  Booting a PinephonePro just after flashing, reaching the First Time Use
+  app:
+  &lt;video controls src="./videos/pinephone-boot-jun-8-2023.mp4"&gt;&lt;/video&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  Browsing around on the PinephonePro. The graphics performance with
+  WebRender enabled in Gecko is promising! Notice uBlock Origin doing a
+  good job as usual 😃
+  &lt;video controls src="./videos/pinephone-browse-jun-8-2023.mp4"&gt;&lt;/video&gt;
+&lt;/p&gt;
+    </summary>
+  </entry>
+
+  <entry>
     <title>Fri 20 January 2023</title>
     <link rel="alternate" href="https://capyloon.org/releases.html#jan-20-2023"/>
     <id>https://capyloon.org/releases.html#jan-20-2023</id>

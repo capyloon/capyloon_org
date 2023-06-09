@@ -51,6 +51,134 @@
     <div id="content">
       <h1>Releases</h1>
 
+      <h3 id="jun-09-2023">Fri 09 June 2023</h3>
+
+      <h4>Features</h4>
+      <p>
+        This release introduces several new features that have been brewing for
+        a while! We are pushing use cases that blend peer discovery with a novel
+        app model called <strong>Web Tiles</strong>.
+      </p>
+      <p>
+        <strong>Peer discovery</strong> in your local network is now more user
+        friendly, and integrated in the address book and sharing app. That let
+        you directly select the peer to share data with in addition to QR Code
+        support.
+      </p>
+      <p>
+        <strong>Web Tiles</strong> are the bedrock of a new application model
+        that aims to solve some of the security & privacy challenges of Web
+        Apps. Tiles are:
+      </p>
+      <ul>
+        <li>
+          Immutable: a Tile is a bundle of resources identified using content
+          addressing. Our current implementation uses a tile:// protocol which
+          is similar to the ipfs:// one.
+        </li>
+        <li>
+          Safe by default: a tile can't fetch foreign content. This is enforced
+          by a default CSP applied to all tile:// url loads.
+        </li>
+        <li>
+          Powerful: because they can't leak data to external parties, tiles can
+          be granted access to what are usually considered "dangerous" APIs.
+        </li>
+        <li>
+          Installable and usable offline: being content addressed and
+          local-only, tiles are naturally suited for offline use.
+        </li>
+        <li>
+          Composable: being installed, tiles can register Web Activities like
+          other installed Capyloon apps. This make them ideal candidates to
+          bridge the Http web with new capabilities.
+        </li>
+      </ul>
+
+      <p>
+        Because of their safety and location independence characteristics,
+        <strong>Web Tiles</strong> are well suited for "just in time"
+        application transfer and execution from one peer to another, and for
+        Compute Over Data scenarios.
+      </p>
+      <p>
+        We put together peer discovery and <strong>Web Tiles</strong> with a
+        demo showing a video player: the initiating device sends the player app
+        to its peer, and launches the same tile locally. Because tiles are safe,
+        there is no risk with running one on the receiving side. Both ends can
+        then exchange messages, creating an ad-hoc distributed app. This is of
+        course usable for all kind of multi-device use cases: multiplayer games,
+        remote access to another device content or APIs, etc.
+      </p>
+
+      <p>
+        Here's a video showcasing these features:
+        <video
+          controls
+          style="max-width: 600px"
+          src="./videos/capyloon-may-2023-render.mp4"
+        ></video>
+      </p>
+
+      <h4>Device Support</h4>
+      <p>
+        On the device side, we finally have <strong>full images</strong> for the
+        PinephonePro and the Librem5!
+      </p>
+      <p>
+        Booting a PinephonePro just after flashing, reaching the First Time Use
+        app:
+        <video controls src="./videos/pinephone-boot-jun-8-2023.mp4"></video>
+      </p>
+      <p>
+        Browsing around on the PinephonePro. The graphics performance with
+        WebRender enabled in Gecko is promising! Notice uBlock Origin doing a
+        good job as usual 🙂
+        <video controls src="./videos/pinephone-browse-jun-8-2023.mp4"></video>
+      </p>
+
+      <h4>Downloads</h4>
+      <ul>
+        <li>
+          <a
+            href="https://debian.capyloon.org/pool/main/capyloon-desktop_0.3-19516_amd64.deb"
+            >Debian amd64 Package</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://debian.capyloon.org/pool/main/capyloon-pinephone_0.3-19516_arm64.deb"
+            >Mobian PinePhone Pro Package</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://debian.capyloon.org/pool/main/capyloon-librem5_0.3-19516_arm64.deb"
+            >Mobian Librem 5 Package</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://bafybeihlz3eeouojw6kvfmoxjav364jlactriukmb3ux6bvyppbwopuqcy.ipfs.w3s.link/ipfs/bafybeihlz3eeouojw6kvfmoxjav364jlactriukmb3ux6bvyppbwopuqcy/sargo.tar.xz"
+            >Pixel 3a (sargo) Image</a
+          >
+          (sha256:
+          e10034d73d8457792035633d6afb08c3f628b7aa2467fcd8df6d2d9dd43a6432)
+        </li>
+        <li>
+          <a
+            href="https://bafybeihtdkx2cg77s77qhkeeobyw4uw4epsdwgcjph6pna6yixjgbum7hu.ipfs.w3s.link/ipfs/bafybeihtdkx2cg77s77qhkeeobyw4uw4epsdwgcjph6pna6yixjgbum7hu/gsi.tar.xz"
+            >Generic System Image</a
+          >
+          (A/B arm64, sha256:
+          b925004b305f0c322b0e1044d59498aaa8552ba33bb583ffd14e0b49b7125690)
+        </li>
+        <li>
+          Linux phones (PinephonePro and Librem5) images can be found
+          <a href="https://debian.capyloon.org/images/full/">here</a>.
+        </li>
+      </ul>
+
       <h3 id="jan-20-2023">Fri 20 January 2023</h3>
 
       <h4>Changelog</h4>
@@ -636,7 +764,7 @@
       </ul>
 
       <footer>
-        <div>&copy; 2022 Capyloon LLC.</div>
+        <div>&copy; 2023 Capyloon LLC.</div>
         <div id="privacy-link" tabindex="0">Privacy Policy</div>
       </footer>
       <div id="privacy-policy" tabindex="0">

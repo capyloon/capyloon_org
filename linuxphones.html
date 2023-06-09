@@ -57,46 +57,13 @@
         Pinephone can likely use the same Debian package as the Pinephone Pro,
         but its outdated chipset is not powerful enough for a decent user
         experience.
-        <img src="images/pinephone_librem5.webp"/>
+        <img src="images/pinephone_librem5.webp" />
       </p>
 
       <h3 id="install">Running Capyloon</h3>
       <p>
-        Full images are not yet available, but a Debian package is available to
-        install and run <span class="capyloon">Capyloon</span> on top of a
-        <a href="https://mobian.org">Mobian</a> image.
-      </p>
-
-      <p>Follow this steps to test it:</p>
-      <ul>
-        <li>
-          Download the debian package for your device:
-          <a
-            href="https://cloudflare-ipfs.com/ipfs/bafybeib4dyfvgh2yfh2gp5v7f3jluis7q4mkk7o5nyscdjwrlkm7kuwaga"
-            >PinePhone Pro</a
-          >
-          or
-          <a
-            href="https://cloudflare-ipfs.com/ipfs/bafybeibdvp6jm26fbmk5r6ocui7zjvhzx7ccjy3jnv3wyrjmxi3jimwr4q"
-            >Librem 5</a
-          >
-        </li>
-        <li>
-          Install the package with
-          <code>sudo dpkg -i &lt;path-to-file&gt;</code>
-        </li>
-        <li>Stop Phosh with <code>sudo systemctl stop phosh</code></li>
-        <li>
-          Start <span class="capyloon">Capyloon</span> with
-          <code>sudo systemctl start b2gos</code>
-        </li>
-      </ul>
-
-      <p>
-        If you wish to directly boot into
-        <span class="capyloon">Capyloon</span>, you need to disable Phosh:
-        <code>sudo systemctl disable phosh && sudo systemctl enable b2gos</code
-        >.
+        Full images are available and can be downloaded from
+        <a href="https://debian.capyloon.org/images/full/">here</a>.
       </p>
 
       <h3 id="status">Status</h3>
@@ -129,17 +96,9 @@
           Rebuild the deb: <code>./jackady deb --device=pinephone|librem5</code>
         </li>
       </ul>
-      <p>
-        To make it easier to update the UI, several
-        <code>jackady</code> commands
-        <a href="https://github.com/capyloon/nutria/issues/23"
-          >will be updated</a
-        >
-        to support Linux mainline devices in addition to the Gonk ones.
-      </p>
 
       <footer>
-        <div>&copy; 2022 Capyloon LLC.</div>
+        <div>&copy; 2023 Capyloon LLC.</div>
         <div id="privacy-link" tabindex="0">Privacy Policy</div>
       </footer>
       <div id="privacy-policy" tabindex="0">
