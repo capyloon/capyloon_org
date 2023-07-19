@@ -52,10 +52,3 @@ home = [ "HTML", "RSS", "JSON"]
   titleSeparator = "-"
 
   
-[[menu.shortcuts]]
-  name = "<i class='fab fa-github'></i> GitHub repo"  
-  identifier = "ds"
-  url = "https://github.com/capyloon"
-  weight = 10
-
-

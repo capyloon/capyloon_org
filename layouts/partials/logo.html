@@ -1,1 +1,22 @@
-<img src="/logo.svg" width="100%" alt="Capyloon logo" title="capyloon logo" />
+<div>
+  <a
+    href='{{ (cond (and (ne .Site.Params.landingPageURL nil) (.Site.IsMultiLingual)) .Site.Params.landingPageURL "/") }}'
+  >
+    <img
+      src="/images/graphic.png"
+      width="100%"
+      alt="Capyloon logo"
+      title="capyloon logo"
+      A
+    />
+    <h2
+      style="
+        font-family: 'Lobster', cursive;
+        color: black !important;
+        margin: 0px;
+      "
+    >
+      Capyloon
+    </h2>
+  </a>
+</div>

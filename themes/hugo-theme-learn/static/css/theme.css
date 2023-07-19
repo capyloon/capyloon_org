@@ -265,8 +265,8 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
     display: block;
 }
 #sidebar ul.topics > li > a {
-    line-height: 2rem;
-    font-size: 1.1rem;
+    line-height: 3rem;
+    font-size: 1.3rem;
 }
 #sidebar ul.topics > li > a b {
     opacity: 0.5;
@@ -447,14 +447,17 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
 #footer p {
     margin: 0;
 }
+#footer-icons{
+    transform: scale(0.8);
+}
 body {
-    font-family: "Work Sans", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
-    font-weight: 300;
+    font-family: "Inter", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    font-weight: 400;
     line-height: 1.6;
     font-size: 18px !important;
 }
 h2, h3, h4, h5, h6 {
-    font-family: "Work Sans", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    font-family: "Average Sans", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
     text-rendering: optimizeLegibility;
     color: #5e5e5e;
     font-weight: 400;
@@ -902,7 +905,6 @@ td {
     border-right-color: rgba(0, 0, 0, 0.8);
 }
 .highlightable {
-    padding: 1rem 0 1rem;
     overflow: auto;
     position: relative;
 }
