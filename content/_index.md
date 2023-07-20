@@ -55,8 +55,6 @@ Capyloon is no different. Here's the code for the [lockscreen](https://github.co
 #### Experimental
 Okay, this is us dreaming. But this system has everything from the UI down to the hardware. That means we have so much room to experiment. To really think how devices are connected. 
 
-Portable electronics don't have to be a blackbox. In fact, we're working on integrating  
-
 
 ## Try it!
 
