@@ -22,7 +22,7 @@
   --MENU-SECTIONS-LINK-color: #000000; /* Color of links in menu */
   --MENU-SECTIONS-LINK-HOVER-color: #5E5E5E; /* Color of links in menu, when hovered */
   --MENU-SECTION-ACTIVE-CATEGORY-color: #fff; /* Color of active category text */
-  /*--MENU-SECTION-ACTIVE-CATEGORY-BG-color: #8a8068; Color of background for the active category (only) */
+  --MENU-SECTION-ACTIVE-CATEGORY-BG-color: #353128; 
 
   --MENU-VISITED-color: #33a1ff; /* Color of 'page visited' icons in menu */
   --MENU-SECTION-HR-color: #20272b; /* Color of <hr> separator in menu */
@@ -50,13 +50,6 @@ input[type="week"]:focus,
 select[multiple="multiple"]:focus {
   border-color: none;
   box-shadow: none;
-}
-
-h2,
-h3,
-h4,
-h5 {
-  color: var(--MAIN-TITLES-TEXT-color) !important;
 }
 
 a {

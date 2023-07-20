@@ -4,27 +4,59 @@ date: 2022-12-09T19:01:03+07:00
 draft: false
 ---
 
-# Capyloon
+There really shouldn't be a divide between “native” and “web”. At least not in the way people build apps. 
 
-# Embedding Devices with Modern Web
+Here's the code for a button on 5 different platforms
+```
+// Android
+<Button android:text="I'm a button">
 
-Capyloon is an experimental user agent that aims to give you what you deserve: privacy and control through freedom from the constraints imposed by OS vendors and service providers who decide what you can or can't do online, and how.
+// iOS
+Button("I'm a button")
 
-{{< carousel items="1" height="40" unit="%" duration="" >}}
+// UWP (Windows)
+<Button content="I'm a button" />
 
-Modern mobile OSes like to present themselves as paragons of user friendliness and power. That can't be less true however: for instance, why can't you easily know what song was playing at a given point of a cycling route once home? Of course you can't expect applications to all know about each other - but the current OSes are failing to bridge that gap for you.
+// Web
+<Button>I'm a button</Button>
+```
 
-Both for business reasons and because of their dated design, the incumbents mobile OSes favor silos bundling applications code with their data.
+And of these platforms, the web code can run any of these platforms. Because there are ~~rendering engines~~ browsers that work across all of them. It's why people build with [Electron](https://www.electronjs.org/).
 
-Instead, you should to be able to make the most of the data you create and consume when using these services, on your own terms.
+And if you can really draw anything with the web, target any platform, then why do we still need to learn all this platform-specific stuff? 
 
-Fortunately we have solid foundations to build on: the Web as an application platform offers unique strengths to remedy to these problems. A Web runtime has unrivaled capabilities to leverage your online activity for your benefit. That's why Capyloon is built as a Web based OS, re-using and extending [b2gOS](https://github.com/b2gOS).
+Capyloon is a web-first mobile operating system that takes lovable web technologies all the way to embedded hardware. It's built in the open. Security is top of mind. And you can target it for a lot more than just phones.
 
-It's still early days and we don't have all the answers, so it's important to keep an open mind and to experiment with new ideas. The current prototype starts to explore some: support for the IPFS protocol and for privacy respecting Web Assembly plugins to bring code to your data instead of the other way around.
+{{<imagecontainer>}}
+{{< figure src="/screenshots/mobile-1.png" title="Lockscreen" >}}
+{{< figure src="/screenshots/mobile-2.png" title="Home Screen" >}}
 
-Can these technologies (and others!) fit together to provide user control alongside the creation of an ecosystem for creators of content and plugins? What kind of payment system can fit in? What are the UX challenges?
+{{</imagecontainer>}}
 
-### Try it!
+Seriously, check out the UI code, it's just [HTML/CSS/JS](https://github.com/capyloon/nutria/tree/main/apps/homescreen).
+
+Now you’re probably thinking *why*? 
+
+#### Open
+The web, and mostly everything built around it, is [open](https://www.w3.org/). It’s not a proprietary technology. From accessbility, localization and security, a bunch of people talk through these things.
+
+Capyloon is powered by Gecko (the thing that powers Firefox), and it's out in the [open](https://github.com/capyloon).
+
+#### Easy to Develop
+You know how easy it is to build for the web? As easy as firing up your browser and editing some code. 
+
+Capyloon is no different. Here's the code for the [lockscreen](https://github.com/capyloon/nutria/tree/main/apps/homescreen). Want to build experiences for AR glasses, a smartwatch, or even a doorbell, all it takes is some HTML/CSS. 
+
+#### Experimental
+Okay, this is us dreaming. But this system has everything from the UI down to the hardware. That means we have so much room to experiment. To really think how devices are connected. 
+
+Portable electronics don't have to be a blackbox. In fact, we're working on integrating  
+
+
+## Try it!
+
+Yes. It runs on actual devices. Here it is running on [Pinephone](#) and [Librem 5](#).
+
 
 #### Desktop builds
 
@@ -34,7 +66,12 @@ You can download the latest Debian package [here](packages).
 
 You can download the latest image [here](packages).
 
+
 ### Join Us
+
+Do we have it all figured out? Absolutely not. We can make things look better. We can make things
+
+Would we be upset if you took our code, closed-sourced it, and 
 
 The code is available on [github](https://github.com/capyloon). The main repositories are:
 

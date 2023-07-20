@@ -182,11 +182,11 @@ p {
 }
 
 figcaption h4 {
-    font-weight: 300 !important;
+    font-weight: 200 !important;
     opacity: .85;
-    font-size: 1em;
+    font-size: .8em;
     text-align: center;
-    margin-top: -1.5em;
+    margin-top: -1.8em;
 }
 
 .select-style {
