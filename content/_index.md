@@ -4,7 +4,19 @@ date: 2022-12-09T19:01:03+07:00
 draft: false
 ---
 
-There really shouldn't be a divide between “native” and “web”. At least not in the way people build apps. 
+Portable electronics don't have to be a blackbox. Imagine an OS where you understood everything. From how things were drawn, to how things are processed. 
+
+The web, the internet, is that kind of open platform. 
+
+Capyloon is a web-first mobile operating system that takes all the lovable web technologies to embedded hardware. Security is top of mind. It's fun to build on. And you can target it for a lot more than just phones.
+
+{{<imagecontainer>}}
+{{< figure src="/screenshots/mobile-1.png" title="Lockscreen" >}}
+{{< figure src="/screenshots/mobile-2.png" title="Home Screen" >}}
+
+{{</imagecontainer>}}
+
+<!-- There really shouldn't be a divide between “native” and “web”. At least not in the way people build apps. 
 
 Here's the code for a button on 5 different platforms
 ```
@@ -25,17 +37,9 @@ And of these platforms, the web code can run any of these platforms. Because the
 
 And if you can really draw anything with the web, target any platform, then why do we still need to learn all this platform-specific stuff? 
 
-Capyloon is a web-first mobile operating system that takes lovable web technologies all the way to embedded hardware. It's built in the open. Security is top of mind. And you can target it for a lot more than just phones.
+Seriously, check out the UI code, it's just [HTML/CSS/JS](https://github.com/capyloon/nutria/tree/main/apps/homescreen).  -->
 
-{{<imagecontainer>}}
-{{< figure src="/screenshots/mobile-1.png" title="Lockscreen" >}}
-{{< figure src="/screenshots/mobile-2.png" title="Home Screen" >}}
-
-{{</imagecontainer>}}
-
-Seriously, check out the UI code, it's just [HTML/CSS/JS](https://github.com/capyloon/nutria/tree/main/apps/homescreen).
-
-Now you’re probably thinking *why*? 
+Now you’re probably thinking *why*?
 
 #### Open
 The web, and mostly everything built around it, is [open](https://www.w3.org/). It’s not a proprietary technology. From accessbility, localization and security, a bunch of people talk through these things.
