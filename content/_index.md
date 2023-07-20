@@ -36,8 +36,9 @@ Button("I'm a button")
 And of these platforms, the web code can run any of these platforms. Because there are ~~rendering engines~~ browsers that work across all of them. It's why people build with [Electron](https://www.electronjs.org/).
 
 And if you can really draw anything with the web, target any platform, then why do we still need to learn all this platform-specific stuff? 
+ -->
 
-Seriously, check out the UI code, it's just [HTML/CSS/JS](https://github.com/capyloon/nutria/tree/main/apps/homescreen).  -->
+Seriously, check out the UI code, it's just [HTML/CSS/JS](https://github.com/capyloon/nutria/tree/main/apps/homescreen). 
 
 Now you’re probably thinking *why*?
 
