@@ -16,28 +16,6 @@ Capyloon is a web-first mobile operating system that takes lovable web technolog
 
 {{</imagecontainer>}}
 
-<!-- There really shouldn't be a divide between “native” and “web”. At least not in the way people build apps. 
-
-Here's the code for a button on 5 different platforms
-```
-// Android
-<Button android:text="I'm a button">
-
-// iOS
-Button("I'm a button")
-
-// UWP (Windows)
-<Button content="I'm a button" />
-
-// Web
-<Button>I'm a button</Button>
-```
-
-And of these platforms, the web code can run any of these platforms. Because there are ~~rendering engines~~ browsers that work across all of them. It's why people build with [Electron](https://www.electronjs.org/).
-
-And if you can really draw anything with the web, target any platform, then why do we still need to learn all this platform-specific stuff? 
- -->
-
 Seriously, check out the UI code, it's just [HTML/CSS/JS](https://github.com/capyloon/nutria/tree/main/apps/homescreen). 
 
 Now you’re probably thinking *why*?
@@ -58,30 +36,18 @@ Okay, this is us dreaming. But this is an operating system. Well also a browser.
 We have a great framework that gives us so much room to experiment. To really think how devices are connected. 
 
 
-## Try it!
+## Getting started
 
-Yes. It runs on actual devices. Here it is running on [Pinephone](#) and [Librem 5](#).
+You can either use a physical device or the simulator to get started. And yes, Capyloon runs on actual devices.
 
+Here it is running on [Pinephone](https://pine64.com/product/pinephone-pro-explorer-edition/) and [Librem 5](https://puri.sm/products/librem-5/).
 
-#### Desktop builds
-
-You can download the latest Debian package [here](packages).
-
-#### Device builds
-
-You can download the latest image [here](packages).
-
+You can get up and running by reviewing the [Quickstart guide](/quickstart). Or jump straight into [packages](/packages) to download an image.
 
 ### Join Us
 
-Do we have it all figured out? Absolutely not. We can make things look better. We can make things
+Do we have it all figured out? Absolutely not. So many things that can be made better.
 
-Would we be upset if you took our code, closed-sourced it, and 
-
-The code is available on [github](https://github.com/capyloon). The main repositories are:
-
-- [Nutria](https://github.com/capyloon/nutria) : This is Capyloon set of Web apps. If you are a front-end developer, you will find everything you need in this repository.
-- [api-daemon](https://github.com/capyloon/api-daemon) : Non standard apis exposed to the UI. The [contentmanager](https://github.com/capyloon/api-daemon/tree/main/services/contentmanager) service is specific to Capyloon, and provides the data management layer.
-- [B2G](https://github.com/capyloon/B2G) : Gonk based devices. The Pixel 3a and Android Generic System Images are currently supported.
+The code is available on [github](https://github.com/capyloon). 
 
 Feel free to join the discussion in our [Matrix chat room](https://matrix.to/#/#capyloon:matrix.org), or to [email us](mailto:contact@capyloon.org) for any inquiry.
