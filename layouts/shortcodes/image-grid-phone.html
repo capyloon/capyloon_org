@@ -17,12 +17,22 @@
     order: 1;
     margin: 0em 1em;
   }
+
+  @media only screen and (max-width: 600px) {
+    .flex-item {
+      width: max-content;
+    }
+  }
 </style>
 <div class="flex-container">
   {{ range $index, $slide := .Site.Data.carousel.mobile }}
   <div class="flex-item">
-    <img src="{{ $slide.image }}" alt="{{ $slide.content_html }}" style="margin-bottom: 2px"/>
-    <div style="text-align: center;">{{ $slide.content_html }}</div>
+    <img
+      src="{{ $slide.image }}"
+      alt="{{ $slide.content_html }}"
+      style="margin-bottom: 2px"
+    />
+    <div style="text-align: center">{{ $slide.content_html }}</div>
   </div>
   {{ end }}
 </div>

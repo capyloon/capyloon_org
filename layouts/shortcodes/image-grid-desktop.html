@@ -17,6 +17,12 @@
     order: 1;
     margin: 1em;
   }
+
+  @media only screen and (max-width: 600px) {
+  .flex-item {
+    width: max-content;
+  }
+
 </style>
 <div class="flex-container">
   {{ range $index, $slide := .Site.Data.carousel.desktop }}
