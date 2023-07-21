@@ -6,9 +6,9 @@ draft: false
 
 Portable electronics don't have to be a blackbox. Imagine an OS where you understood everything. From how things were drawn, to how things are processed. 
 
-The web, the internet, is that kind of open platform. 
+The web, the internet, is that kind of open platform.
 
-Capyloon is a web-first mobile operating system that takes all the lovable web technologies to embedded hardware. Security is top of mind. It's fun to build on. And you can target it for a lot more than just phones.
+Capyloon is a web-first mobile operating system that takes lovable web technologies to embedded hardware. Security is top of mind. It's fun to build on. And you can target it for a lot more than just phones.
 
 {{<imagecontainer>}}
 {{< figure src="/screenshots/mobile-1.png" title="Lockscreen" >}}
@@ -43,9 +43,9 @@ Seriously, check out the UI code, it's just [HTML/CSS/JS](https://github.com/cap
 Now you’re probably thinking *why*?
 
 #### Open
-The web, and mostly everything built around it, is [open](https://www.w3.org/). It’s not a proprietary technology. From accessbility, localization and security, a bunch of people talk through these things.
+The web, and mostly everything built around it, is [open](https://www.w3.org/). It’s not owned by one company. It's not a proprietary technology. From accessbility, localization and security, a bunch of people talk through these things.
 
-Capyloon is powered by Gecko (the thing that powers Firefox), and it's out in the [open](https://github.com/capyloon).
+Capyloon is powered by Gecko (the thing that powers Firefox). And it's [open source](https://github.com/capyloon) too. Chip away.
 
 #### Easy to Develop
 You know how easy it is to build for the web? As easy as firing up your browser and editing some code. 
@@ -53,7 +53,9 @@ You know how easy it is to build for the web? As easy as firing up your browser 
 Capyloon is no different. Here's the code for the [lockscreen](https://github.com/capyloon/nutria/tree/main/apps/homescreen). Want to build experiences for AR glasses, a smartwatch, or even a doorbell, all it takes is some HTML/CSS. 
 
 #### Experimental
-Okay, this is us dreaming. But this system has everything from the UI down to the hardware. That means we have so much room to experiment. To really think how devices are connected. 
+Okay, this is us dreaming. But this is an operating system. Well also a browser. Hmm, actually, a rust program. When do you ever get the chance to tweak things from the UI all the way down to the hardware.
+
+We have a great framework that gives us so much room to experiment. To really think how devices are connected. 
 
 
 ## Try it!

@@ -1,0 +1,28 @@
+{{ .Scratch.Set "height" (.Get "height") }} {{ .Scratch.Set "unit" (.Get "unit")
+}} {{ .Scratch.Set "ordinal" .Ordinal }} {{ .Scratch.Set "items" (.Get "items")
+}}
+
+<style>
+  .flex-container {
+    flex-direction: row;
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    align-content: center;
+    flex-flow: row wrap;
+  }
+
+  .flex-item {
+    width: 20%;
+    order: 1;
+    margin: 0em 1em;
+  }
+</style>
+<div class="flex-container">
+  {{ range $index, $slide := .Site.Data.carousel.mobile }}
+  <div class="flex-item">
+    <img src="{{ $slide.image }}" alt="{{ $slide.content_html }}" style="margin-bottom: 2px"/>
+    <div style="text-align: center;">{{ $slide.content_html }}</div>
+  </div>
+  {{ end }}
+</div>

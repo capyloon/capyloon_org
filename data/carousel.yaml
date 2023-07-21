@@ -1,4 +1,4 @@
-images:
+mobile:
   - image: /screenshots/mobile-1.webp
     content_html: "Mobile Lockscreen"
   - image: /screenshots/mobile-2.webp
@@ -15,6 +15,7 @@ images:
     content_html: "Mobile uBlockOrigin Panel"
   - image: /screenshots/mobile-8.webp
     content_html: "Mobile Page Information"
+desktop:
   - image: /screenshots/desktop-1.webp
     content_html: "Homescreen"
   - image: /screenshots/desktop-2.webp
