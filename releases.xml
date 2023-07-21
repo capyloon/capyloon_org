@@ -13,6 +13,81 @@
 
   <entry>
     <title>Fri 09 June 2023</title>
+    <link rel="alternate" href="https://capyloon.org/releases.html#jul-21-2023"/>
+    <id>https://capyloon.org/releases.html#jul-21-2023</id>
+    <updated>2023-07-21:00:00Z</updated>
+    <summary type="html">
+&lt;h4&gt;Features&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;a href="https://fosstodon.org/@capyloon/110596321815944713"
+      &gt;Addition&lt;/a
+    &gt;
+    of several `env()` CSS variables usable as colors that will match the
+    wallpaper. The extraction is done with
+    &lt;a href="https://github.com/Vibrant-Colors/node-vibrant/"
+      &gt;node-vibrant&lt;/a
+    &gt;
+    and the usable tokens are listed
+    &lt;a
+      href="https://github.com/capyloon/gecko-b2g/blob/9af2df209d31624643cd167093c6dd7895a6cc80/servo/components/style/custom_properties.rs#L148-L154"
+      &gt;here&lt;/a
+    &gt;. The system app and the home screen have been updated to use them,
+    but any web page can also do the same!
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href="https://fosstodon.org/@capyloon/110623784626118445"
+      &gt;Support for actions&lt;/a
+    &gt;
+    when text is selected without having to use the context menu. Beauty
+    of the web, this works in any app where text can be selected!
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href="https://fosstodon.org/@capyloon/110628950055658441"
+      &gt;Improvements of media controls&lt;/a
+    &gt;:
+    &lt;ul&gt;
+      &lt;li&gt;Mute control in the carousel view when applicable.&lt;/li&gt;
+      &lt;li&gt;
+        Play/pause/track change controls in the quick settings panel for
+        active players.
+      &lt;/li&gt;
+      &lt;li&gt;Same controls on the lock screen.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href="https://fosstodon.org/@capyloon/110651726646616218"
+      &gt;Private Browsing tabs&lt;/a
+    &gt;
+    are now available! They also get a purple outline in the carousel view
+    to recognize them. Next step: containers, to help you manage all your
+    social accounts :)
+  &lt;/li&gt;
+  &lt;li&gt;
+    A set of &lt;code&gt;about:&lt;/code&gt; pages are now loading, including the
+    beloved &lt;code&gt;about:config&lt;/code&gt;!
+  &lt;/li&gt;
+  &lt;li&gt;
+    Safebrowsing is setup properly, as well as the MLS endpoint for
+    geolocation support. This all brings us closer to a usable daily
+    driver.
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4&gt;Device Support&lt;/h4&gt;
+&lt;p&gt;
+  Great progress was made on the PinephonePro camera support thanks to the
+  Mobile Linux community:
+  &lt;a href="https://fosstodon.org/@capyloon/110731752382326647"
+    &gt;webrtc now works&lt;/a
+  &gt;
+  pretty well!
+&lt;/p&gt;
+    </summary>
+  </entry>
+
+  <entry>
+    <title>Fri 09 June 2023</title>
     <link rel="alternate" href="https://capyloon.org/releases.html#jun-09-2023"/>
     <id>https://capyloon.org/releases.html#jun-09-2023</id>
     <updated>2023-06-09:00:00Z</updated>

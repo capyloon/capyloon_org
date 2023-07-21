@@ -51,7 +51,118 @@
     <div id="content">
       <h1>Releases</h1>
 
-      <h3 id="jun-09-2023">Fri 09 June 2023</h3>
+      <h3 id="jul-21-2023"><a href="#jul-21-2023">Fri 21 July 2023</a></h3>
+
+      <h4>Features</h4>
+      <ul>
+        <li>
+          <a href="https://fosstodon.org/@capyloon/110596321815944713"
+            >Addition</a
+          >
+          of several `env()` CSS variables usable as colors that will match the
+          wallpaper. The extraction is done with
+          <a href="https://github.com/Vibrant-Colors/node-vibrant/"
+            >node-vibrant</a
+          >
+          and the usable tokens are listed
+          <a
+            href="https://github.com/capyloon/gecko-b2g/blob/9af2df209d31624643cd167093c6dd7895a6cc80/servo/components/style/custom_properties.rs#L148-L154"
+            >here</a
+          >. The system app and the home screen have been updated to use them,
+          but any web page can also do the same!
+        </li>
+        <li>
+          <a href="https://fosstodon.org/@capyloon/110623784626118445"
+            >Support for actions</a
+          >
+          when text is selected without having to use the context menu. Beauty
+          of the web, this works in any app where text can be selected!
+        </li>
+        <li>
+          <a href="https://fosstodon.org/@capyloon/110628950055658441"
+            >Improvements of media controls</a
+          >:
+          <ul>
+            <li>Mute control in the carousel view when applicable.</li>
+            <li>
+              Play/pause/track change controls in the quick settings panel for
+              active players.
+            </li>
+            <li>Same controls on the lock screen.</li>
+          </ul>
+        </li>
+        <li>
+          <a href="https://fosstodon.org/@capyloon/110651726646616218"
+            >Private Browsing tabs</a
+          >
+          are now available! They also get a purple outline in the carousel view
+          to recognize them. Next step: containers, to help you manage all your
+          social accounts :)
+        </li>
+        <li>
+          A set of <code>about:</code> pages are now loading, including the
+          beloved <code>about:config</code>!
+        </li>
+        <li>
+          Safebrowsing is setup properly, as well as the MLS endpoint for
+          geolocation support. This all brings us closer to a usable daily
+          driver.
+        </li>
+      </ul>
+
+      <h4>Device Support</h4>
+      <p>
+        Great progress was made on the PinephonePro camera support thanks to the
+        Mobile Linux community:
+        <a href="https://fosstodon.org/@capyloon/110731752382326647"
+          >webrtc now works</a
+        >
+        pretty well!
+      </p>
+
+      <h4>Downloads</h4>
+      <ul>
+        <li>
+          <a
+            href="https://debian.capyloon.org/pool/main/capyloon-desktop_0.3-19558_amd64.deb"
+            >Debian amd64 Package</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://debian.capyloon.org/pool/main/capyloon-pinephone_0.3-19558_arm64.deb"
+            >Mobian PinePhone Pro Package</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://debian.capyloon.org/pool/main/capyloon-librem5_0.3-19558_arm64.deb"
+            >Mobian Librem 5 Package</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://bafybeicc5utt7cocyhmi4btz6bhajwoem6g2smzxsfszfk3xrd7mtyviri.ipfs.w3s.link/ipfs/bafybeicc5utt7cocyhmi4btz6bhajwoem6g2smzxsfszfk3xrd7mtyviri/sargo.tar.xz"
+            >Pixel 3a (sargo) Image</a
+          >
+          (sha256:
+          64ea40a09bdefd09f9637de54a3f1811f2444803aadf2bfba9983e38659a7edc)
+        </li>
+        <li>
+          <a
+            href="https://bafybeifa7227y5wkrixiu3cljgk7dmv67c3ag73mo4cbgiycgt4yxkk5sa.ipfs.w3s.link/ipfs/bafybeifa7227y5wkrixiu3cljgk7dmv67c3ag73mo4cbgiycgt4yxkk5sa/gsi.tar.xz"
+            >Generic System Image</a
+          >
+          (A/B arm64, sha256:
+          9482b3fc597ac6a50d95eeb2d48d17c4dae5a5a93a54b322efded9b2157c2d50)
+        </li>
+        <li>
+          Linux phones (PinephonePro and Librem5) images can be found
+          <a href="https://debian.capyloon.org/images/full/">here</a>.
+        </li>
+      </ul>
+
+      <h3 id="jun-09-2023"><a href="#jun-09-2023">Fri 09 June 2023</a></h3>
 
       <h4>Features</h4>
       <p>
@@ -179,7 +290,7 @@
         </li>
       </ul>
 
-      <h3 id="jan-20-2023">Fri 20 January 2023</h3>
+      <h3 id="jan-20-2023"><a href="#jan-20-2023">Fri 20 January 2023</a></h3>
 
       <h4>Changelog</h4>
       <p>This release introduces several new features:</p>
@@ -251,7 +362,7 @@
         </li>
       </ul>
 
-      <h3 id="sept-27">Tue 27 September 2022</h3>
+      <h3 id="sept-27"><a href="#sept-27">Tue 27 September 2022</a></h3>
 
       <h4>Changelog</h4>
       <p>
@@ -322,7 +433,7 @@
         </li>
       </ul>
 
-      <h3 id="june-10">Fri 10 June 2022</h3>
+      <h3 id="june-10"><a href="#june-10">Fri 10 June 2022</a></h3>
 
       <h4>Changelog</h4>
       <p>
@@ -410,7 +521,7 @@
         </li>
       </ul>
 
-      <h3 id="may-09">Mon 09 May 2022</h3>
+      <h3 id="may-09"><a href="#may-09">Mon 09 May 2022</a></h3>
 
       <h4>Changelog</h4>
       <p>
@@ -477,7 +588,7 @@
         </li>
       </ul>
 
-      <h3 id="april-08">Fri 08 April 2022</h3>
+      <h3 id="april-08"><a href="#april-08">Fri 08 April 2022</a></h3>
 
       <h4>Changelog</h4>
       <ul>
@@ -531,7 +642,7 @@
         </li>
       </ul>
 
-      <h3 id="march-25">Fri 25 March 2022</h3>
+      <h3 id="march-25"><a href="#march-25">Fri 25 March 2022</a></h3>
 
       <h4>Changelog</h4>
       <ul>
@@ -576,7 +687,7 @@
         </li>
       </ul>
 
-      <h3 id="march-18">Fri 18 March 2022</h3>
+      <h3 id="march-18"><a href="#march-18">Fri 18 March 2022</a></h3>
 
       <h4>Changelog</h4>
       <ul>
@@ -636,7 +747,7 @@
         </li>
       </ul>
 
-      <h3 id="march-08">Tue 08 March 2022</h3>
+      <h3 id="march-08"><a href="#march-08">Tue 08 March 2022</a></h3>
 
       <h4>Changelog</h4>
       <ul>
@@ -671,7 +782,7 @@
         </li>
       </ul>
 
-      <h3 id="feb-22">Tue 22 Feb 2022</h3>
+      <h3 id="feb-22"><a href="#feb-22">Tue 22 Feb 2022</a></h3>
 
       <h4>Changelog</h4>
       <ul>
@@ -703,7 +814,7 @@
         </li>
       </ul>
 
-      <h3 id="feb-17">Thu 17 Feb 2022</h3>
+      <h3 id="feb-17"><a href="#feb-17">Thu 17 Feb 2022</a></h3>
 
       <h4>Changelog</h4>
       <ul>
@@ -734,7 +845,7 @@
         </li>
       </ul>
 
-      <h3 id="feb-03">Thu 03 Feb 2022</h3>
+      <h3 id="feb-03"><a href="#feb-03">Thu 03 Feb 2022</a></h3>
 
       <h4>Changelog</h4>
       <ul>
