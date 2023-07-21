@@ -25,29 +25,16 @@ body {
     color: #323232 !important;
 }
 
-#body a.highlight, #body a.highlight:hover, #body a.highlight:focus {
-    text-decoration: none;
+.highlightable a.highlight, .highlightable a.highlight:hover, .highlightable a.highlight:focus {
+    text-decoration: underline;
     outline: none;
     outline: 0;
 }
-#body a.highlight {
+.highlightable a.highlight {
     line-height: 1.1;
     display: inline-block;
 }
-#body a.highlight:after {
-    display: block;
-    content: "";
-    height: 1px;
-    width: 0%;
-    background-color: #0082a7; /*#CE3B2F*/
-    -webkit-transition: width 0.5s ease;
-    -moz-transition: width 0.5s ease;
-    -ms-transition: width 0.5s ease;
-    transition: width 0.5s ease;
-}
-#body a.highlight:hover:after, #body a.highlight:focus:after {
-    width: 100%;
-}
+
 .progress {
     position:absolute;
     background-color: rgba(246, 246, 246, 0.97);

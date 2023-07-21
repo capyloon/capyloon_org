@@ -6,10 +6,4 @@ chapter = true
 pre = ""
 +++
 
-# Development
-
-## Bootstraping
-
-## Building images
-
-## Porting to new devices
+Hi
