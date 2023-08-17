@@ -21,6 +21,7 @@ Seriously, check out the UI code, it's just [HTML/CSS/JS](https://github.com/cap
 Now you’re probably thinking *why*?
 
 #### Open
+
 The web, and mostly everything built around it, is [open](https://www.w3.org/). It’s not owned by one company. It's not a proprietary technology. From accessbility, localization and security, a bunch of people talk through these things.
 
 Capyloon is powered by Gecko (the thing that powers Firefox). And it's [open source](https://github.com/capyloon) too. Chip away.
