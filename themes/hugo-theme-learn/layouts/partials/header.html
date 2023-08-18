@@ -71,9 +71,10 @@
                           <i class="fas fa-bars"></i>
                         </a>
                     </span>
-                    <span class="hide" style=" border-right: thin solid #DAD8D8 !important;
-                    padding-right: 0.5rem !important;
-                    margin-right: 1rem !important;"> 
+                    {{ if $toc }}
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  {{ end }}
+                    <span class="hide"> 
                       {{ partial "header-logo.html" . }}
                     </span>
               

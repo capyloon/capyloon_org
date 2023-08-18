@@ -152,16 +152,18 @@ a:hover {
 }
 
 .page-footer {
-  width: 100%;
   text-align: center;
-
 }
 
 /*Desktop*/
 @media screen and (min-width: 480px) {
   .page-footer {
-    margin-left: 10%;
-    display: flex;
-    justify-content: center;
+    position: fixed;
+    bottom:0px;
+    left: 20%;
+    width: 80%;
+    line-height: .5em;
+    font-size: small;
+  
   }
 }
