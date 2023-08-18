@@ -160,7 +160,7 @@ a:hover {
 /*Desktop*/
 @media screen and (min-width: 480px) {
   .page-footer {
-    width: 120%;
+    margin-left: 10%;
     display: flex;
     justify-content: center;
   }

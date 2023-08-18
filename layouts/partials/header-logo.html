@@ -10,20 +10,26 @@
     width: 60px;
   }
 
-  .hide .small-logo{
+  .hide .small-logo {
     display: none;
   }
-  
-  .small-logo img{
-   margin:0px !important;
-   display: unset !important;
+
+  @media only all and (max-width: 47.938em) {
+    .hide .small-logo {
+      width: 40px;
+    }
+  }
+
+  .small-logo img {
+    margin: 0px !important;
+    display: unset !important;
   }
 </style>
 <div class="header-logo">
-    <a
-      href='{{ (cond (and (ne .Site.Params.landingPageURL nil) (.Site.IsMultiLingual)) .Site.Params.landingPageURL "/") }}'
-    >
-    <div style="display: flex; align-items: center;">
+  <a
+    href='{{ (cond (and (ne .Site.Params.landingPageURL nil) (.Site.IsMultiLingual)) .Site.Params.landingPageURL "/") }}'
+  >
+    <div style="display: flex; align-items: center">
       <div class="small-logo">
         <img
           src="/images/graphic.png"
@@ -49,6 +55,5 @@
         </p>
       </div>
     </div>
-    </a>
-  </div>
+  </a>
 </div>
