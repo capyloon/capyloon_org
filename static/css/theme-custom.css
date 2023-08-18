@@ -1,4 +1,3 @@
-
 :root {
   --MAIN-TEXT-color: #323232; /* Color of text by default */
   --MAIN-TITLES-TEXT-color: #5e5e5e; /* Color of titles h2-h3-h4-h5 */
@@ -9,20 +8,20 @@
   --MENU-HOME-LINK-color: #353128; /* Color of the home button text */
   --MENU-HOME-LINK-HOVER-color: #5e5e5e; /* Color of the hovered home button text */
 
-  --MENU-HEADER-BG-color: #F1DFB8; /* Background color of menu header */
-  --MENU-HEADER-BORDER-color: #F1DFB8; /*Color of menu header border */
+  --MENU-HEADER-BG-color: #f1dfb8; /* Background color of menu header */
+  --MENU-HEADER-BORDER-color: #f1dfb8; /*Color of menu header border */
 
-  --MENU-SEARCH-BG-color: #F1DFB8; /* Search field background color (by default borders + icons) */
+  --MENU-SEARCH-BG-color: #f1dfb8; /* Search field background color (by default borders + icons) */
   --MENU-SEARCH-BOX-color: black; /*Override search field border color */
   --MENU-SEARCH-BOX-ICONS-color: black; /*Override search field icons color 
   /*TODO: Search box text placeholder color needs to be changed */
 
   --MENU-SECTIONS-ACTIVE-BG-color: #353128; /* Background color of the active section and its children */
-  --MENU-SECTIONS-BG-color: #F1DFB8; /* Background color of other sections */
+  --MENU-SECTIONS-BG-color: #f1dfb8; /* Background color of other sections */
   --MENU-SECTIONS-LINK-color: #000000; /* Color of links in menu */
-  --MENU-SECTIONS-LINK-HOVER-color: #5E5E5E; /* Color of links in menu, when hovered */
+  --MENU-SECTIONS-LINK-HOVER-color: #5e5e5e; /* Color of links in menu, when hovered */
   --MENU-SECTION-ACTIVE-CATEGORY-color: #fff; /* Color of active category text */
-  --MENU-SECTION-ACTIVE-CATEGORY-BG-color: #353128; 
+  --MENU-SECTION-ACTIVE-CATEGORY-BG-color: #353128;
 
   --MENU-VISITED-color: #33a1ff; /* Color of 'page visited' icons in menu */
   --MENU-SECTION-HR-color: #20272b; /* Color of <hr> separator in menu */
@@ -108,9 +107,8 @@ a:hover {
   color: var(--MENU-SECTIONS-LINK-color);
 }
 
-#sidebar li.parent a{
+#sidebar li.parent a {
   color: #959595;
-
 }
 
 #sidebar a:hover {
@@ -151,4 +149,19 @@ a:hover {
 #footer ul > li {
   display: inline-block;
   margin: 10px;
+}
+
+.page-footer {
+  width: 100%;
+  text-align: center;
+
+}
+
+/*Desktop*/
+@media screen and (min-width: 480px) {
+  .page-footer {
+    width: 120%;
+    display: flex;
+    justify-content: center;
+  }
 }

@@ -240,10 +240,19 @@ select[multiple="multiple"]:focus {
 #sidebar-toggle-span {
   display: none;
 }
+
+.header-logo {
+  display: none;
+}
+
 @media only all and (max-width: 47.938em) {
   #sidebar-toggle-span {
     display: inline;
   }
+  .header-logo {
+    display: inline-flex;
+  }
+  
 }
 #sidebar {
   background-color: #322a38;
@@ -507,6 +516,7 @@ select[multiple="multiple"]:focus {
 #body-inner {
   margin-bottom: 5rem;
 }
+
 #chapter {
   display: flex;
   align-items: center;
@@ -1127,7 +1137,8 @@ td {
   white-space: nowrap;
   text-overflow: ellipsis;
   width: 70%;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   float: left;
 }
 #body #breadcrumbs span {
@@ -1149,6 +1160,9 @@ td {
   #body {
     margin-left: 0;
     width: 100%;
+  }
+  #body-inner {
+    padding: 12px;
   }
   .sidebar-hidden {
     overflow: hidden;

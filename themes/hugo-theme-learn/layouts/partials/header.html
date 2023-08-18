@@ -56,11 +56,11 @@
                   {{ $File := .File }}
                   {{ $Site := .Site }}
                   {{with $File.Path }}
-                  <div id="top-github-link">
-                    <a class="github-link" title='{{T "Edit-this-page"}}' href="{{ $Site.Params.editURL }}{{ replace $File.Dir "\\" "/" }}{{ $File.LogicalName }}" target="blank">
+                    <div id="top-github-link">
+                       <!-- <a class="github-link" title='{{T "Edit-this-page"}}' href="{{ $Site.Params.editURL }}{{ replace $File.Dir "\\" "/" }}{{ $File.LogicalName }}" target="blank">
                       <i class="fas fa-code-branch"></i>
                       <span id="top-github-link-text">{{T "Edit-this-page"}}</span>
-                    </a>
+                    </a> -->
                   </div>
                   {{ end }}
                 {{ end }}
@@ -74,7 +74,11 @@
                   {{ if $toc }}
                   <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
                   {{ end }}
-                  <span class="links">
+                  <span class="hide"> 
+                    {{ partial "header-logo.html" . }}
+                  </span>
+
+                  <span class="links" style="align-self: center;display: flex;align-items: center;height: 100%;">
                  {{$showBreadcrumb := (and (not .Params.disableBreadcrumb) (not .Site.Params.disableBreadcrumb))}}
                  {{if $showBreadcrumb}}
                     {{ template "breadcrumb" dict "page" . "value" .Title }}
