@@ -252,7 +252,6 @@ select[multiple="multiple"]:focus {
   .header-logo {
     display: inline-flex;
   }
-  
 }
 #sidebar {
   background-color: #322a38;
@@ -1115,7 +1114,8 @@ td {
 .lifecycle #body-inner .level-4 + ol h3 {
   background: #34495e;
 }
-#top-bar {
+#top-bar,
+#top-bar-home {
   background: #f6f6f6;
   border-radius: 2px;
   padding: 0 1rem;

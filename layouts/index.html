@@ -2,9 +2,9 @@
 
   <body class="" data-url="{{ .RelPermalink }}" style="background: #F2F2EC;">
     {{ partial "menu.html" . }}
-        <section id="body">
 
-        <div id="top-bar" style="background: #F2F2EC;">
+
+        <div id="top-bar-home" style="background: #F2F2EC;min-height: 0rem;">
             {{ if and (or .IsPage .IsSection) .Site.Params.editURL }}
               {{ $File := .File }}
               {{ $Site := .Site }}
@@ -27,10 +27,14 @@
                 {{ partial "header-logo.html" . }}
             </div>
             </div>
-        
+          </div>
+      
+            <div class="body-inner">
 
             <h2> An operating system built with the web. </h2>
             <h3>Open for everyone to use. Privacy first. And a whole lot of freedom to use anywhere</h3>
+            <img src="https://figmage.com/images/pc74k_7qtxz13pqlmRVD_.png" />
+            </div>
      </body>
 
      {{ partial "footer.html" . }}

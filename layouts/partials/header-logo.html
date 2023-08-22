@@ -25,14 +25,9 @@
     display: unset !important;
   }
 </style>
-<div
-  class="header-logo"
-  style="
-    border-right: thin solid #dad8d8 !important;
-    padding-right: 0.5rem !important;
-    margin-right: 1rem !important;
-  "
->
+<div class="header-logo" style="border-right: thin solid #DAD8D8 !important;
+padding-right: 0.5rem !important;
+margin-right: 1rem !important;">
   <a
     href='{{ (cond (and (ne .Site.Params.landingPageURL nil) (.Site.IsMultiLingual)) .Site.Params.landingPageURL "/") }}'
   >
@@ -57,11 +52,10 @@
           -webkit-text-fill-color: transparent;
         "
       >
-        <div class="padding-higlia" style="display: flex; align-items: center">
-          <p style="font-family: 'Lobster', cursive; padding: 3px; margin: 0px">
-            Capyloon
-          </p>
-        </div>
+      
+        <p style="font-family: 'Lobster', cursive; padding: 3px; margin: 0px">
+          Capyloon
+        </p>
       </div>
     </div>
   </a>
