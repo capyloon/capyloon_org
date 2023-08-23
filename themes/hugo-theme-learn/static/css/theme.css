@@ -550,7 +550,15 @@ select[multiple="multiple"]:focus {
 }
 #footer-icons {
   transform: scale(0.8);
+  display: flex;
 }
+
+#footer-icons .wrapper{
+  height:48px;
+  width:42px;
+}
+
+
 body {
   font-family: "Inter", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
   font-weight: 400;
