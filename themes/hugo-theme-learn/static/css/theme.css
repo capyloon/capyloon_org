@@ -240,9 +240,17 @@ select[multiple="multiple"]:focus {
 #sidebar-toggle-span {
   display: none;
 }
+
+.header-logo {
+  display: none;
+}
+
 @media only all and (max-width: 47.938em) {
   #sidebar-toggle-span {
     display: inline;
+  }
+  .header-logo {
+    display: inline-flex;
   }
 }
 #sidebar {
@@ -507,6 +515,7 @@ select[multiple="multiple"]:focus {
 #body-inner {
   margin-bottom: 5rem;
 }
+
 #chapter {
   display: flex;
   align-items: center;
@@ -1105,7 +1114,8 @@ td {
 .lifecycle #body-inner .level-4 + ol h3 {
   background: #34495e;
 }
-#top-bar {
+#top-bar,
+#top-bar-home {
   background: #f6f6f6;
   border-radius: 2px;
   padding: 0 1rem;
@@ -1127,7 +1137,8 @@ td {
   white-space: nowrap;
   text-overflow: ellipsis;
   width: 70%;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   float: left;
 }
 #body #breadcrumbs span {
@@ -1149,6 +1160,9 @@ td {
   #body {
     margin-left: 0;
     width: 100%;
+  }
+  #body-inner {
+    padding: 12px;
   }
   .sidebar-hidden {
     overflow: hidden;
