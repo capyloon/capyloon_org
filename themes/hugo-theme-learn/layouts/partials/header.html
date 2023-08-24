@@ -32,6 +32,9 @@
 
     <script src="{{"js/jquery-3.3.1.min.js"| relURL}}{{ if $assetBusting }}?{{ now.Unix }}{{ end }}"></script>
 
+    <script type="module" src="{{"js/main.js"| relURL}}{{ if $assetBusting }}?{{ now.Unix }}{{ end }}"></script>
+
+
     <style>
       :root #header + #content > #left > #rlblock_left{
           display:none !important;
@@ -86,7 +89,6 @@
                    {{ .Title }}
                  {{ end }}
                   </span>
-                 
                 </div>
                 {{ if $toc }}
                     {{ partial "toc.html" . }}

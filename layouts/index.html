@@ -68,7 +68,7 @@ function onViewportChange(){
 </style>
 
   <body class="" data-url="{{ .RelPermalink }}" style="background-image: url('/images/capyloon_bg.png'); background-size: cover;">
-    {{ partial "menu.html" . }}
+
         <div id="top-bar-home" style="background: #F2F2EC;min-height: 0rem;">
             {{ if and (or .IsPage .IsSection) .Site.Params.editURL }}
               {{ $File := .File }}
