@@ -37,6 +37,7 @@ function onViewportChange(){
   const osImageEl = document.getElementById('os-image');
   const codeImageEl = document.getElementById('code-image');
 
+
   if(window.innerWidth < 800){
     osImageEl.parentElement.style.width = '350px';
     codeImageEl.parentElement.style.width = '350px';
@@ -67,7 +68,7 @@ function onViewportChange(){
 </style>
 
   <body class="" data-url="{{ .RelPermalink }}" style="background-image: url('/images/capyloon_bg.png'); background-size: cover;">
-    {{ partial "menu.html" . }}
+
         <div id="top-bar-home" style="background: #F2F2EC;min-height: 0rem;">
             {{ if and (or .IsPage .IsSection) .Site.Params.editURL }}
               {{ $File := .File }}
@@ -96,11 +97,11 @@ function onViewportChange(){
       
             <div class="body-inner">
 
-            <h2 style="text-align:center;"> An operating system built with the <b>web.</b></h2>
+            <h2 style="text-align:center; margin-left:10px; margin-right:10px;"> An operating system built with the <b>web.</b></h2>
 
             <div style="position: relative; height:600px; display: flex; align-items: center; flex-direction: column;"> 
               
-              <button id="toggle-button" style="margin-bottom:10px; display:flex; align-items: center; gap:4px;" onclick="toggleCode()">
+              <button id="toggle-button" style="margin-bottom:10px; display:flex; align-items: center; gap:4px; border:1px solid #344d81;" onclick="toggleCode()">
                 <p id="toggle-button-text" style="margin:0">See HTML</p>
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width:1em; height:1em;">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
@@ -110,7 +111,7 @@ function onViewportChange(){
               <div id="os-container" style="position: absolute; width:350px; height:550px; z-index: 10; top:38px; ">
                 <img id="os-image" style="margin:0; width: 100%; height: 100%;" src="/screenshots/mobile-2.png" />
               </div>
-              <div id="code-container" style="width:350px; height:550px; position: absolute; left:100px; top:38px; z-index: 1; filter: brightness(50%);">
+              <div id="code-container" style="width:350px; height:550px; position: absolute; left:170px; top:38px; z-index: 1; filter: brightness(50%);">
                 <img id="code-image"  style="margin:0; width: 100%; height: 100%;" src="https://figmage.com/images/p4bZDPrykGc6hpqy_WGn5.png" />
               </div>
             </div>
