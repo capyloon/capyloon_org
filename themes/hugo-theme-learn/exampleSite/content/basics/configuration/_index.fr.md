@@ -44,8 +44,6 @@ Notez que certains de ces paramètres sont expliqués en détails dans d'autres 
   ordersectionsby = "weight"
   # Utilisez ce paramètre pour modifier le schéma de couleur du site. Les valeurs par défaut sont "red", "blue", "green".
   themeVariant = ""
-  # Fournissez une liste de fichiers css personnalisés à charger par rapport depuis le dossier `static/` à la racine du site.
-  custom_css = ["css/foo.css", "css/bar.css"]
 ```
 
 ## Activer la recherche {#activer-recherche}
