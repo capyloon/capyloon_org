@@ -1,1 +1,43 @@
-<img src="/logo.svg" width="100%" alt="Capyloon logo" title="capyloon logo" />
+<style>
+  .logo-header {
+    --text-color: darkslategray;
+    --background-color: wheat;
+    --grad-start: red;
+    --grad-end: orange;
+  }
+</style>
+<div>
+  <a
+    href='{{ (cond (and (ne .Site.Params.landingPageURL nil) (.Site.IsMultiLingual)) .Site.Params.landingPageURL "/") }}'
+  >
+    <img
+      src="/images/graphic.png"
+      width="100%"
+      alt="Capyloon logo"
+      title="capyloon logo"
+      A
+    />
+    <div
+      class="logo-header"
+      style="
+        background: linear-gradient(
+          to bottom right,
+          var(--grad-start),
+          var(--grad-end)
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      "
+    >
+      <h2
+        style="
+          font-family: 'Lobster', cursive;
+          padding:3px;
+          margin: 0px;
+        "
+      >
+        Capyloon
+      </h2>
+    </div>
+  </a>
+</div>

@@ -1,0 +1,157 @@
+{{ partial "header.html" . }}
+
+<script defer>
+
+let currentContainer = 'os-container';
+
+function toggleCode(){
+
+  const otherContainer = currentContainer == 'os-container' ? 'code-container' : 'os-container';
+
+  const currentContainerEl = document.getElementById(currentContainer);
+  const otherContainerEl = document.getElementById(otherContainer);
+  const toggleButtonEl = document.getElementById("toggle-button-text");
+
+  otherContainerEl.style.zIndex = 10;
+  otherContainerEl.style.filter = 'brightness(100%)';
+
+  currentContainerEl.style.zIndex = 1;
+  currentContainerEl.style.filter = 'brightness(50%)';
+
+  toggleButtonEl.textContent = otherContainer === "code-container" ? 'See UI' : 'See HTML';
+
+  currentContainer = otherContainer;
+
+}
+
+
+
+window.onresize = onViewportChange;
+
+ 
+window.addEventListener('pageshow', function(event) {
+    onViewportChange();
+});
+
+function onViewportChange(){ 
+  const osImageEl = document.getElementById('os-image');
+  const codeImageEl = document.getElementById('code-image');
+
+
+  if(window.innerWidth < 800){
+    osImageEl.parentElement.style.width = '350px';
+    codeImageEl.parentElement.style.width = '350px';
+
+    osImageEl.src = '/screenshots/mobile-2.png';
+    codeImageEl.src = 'https://figmage.com/images/p4bZDPrykGc6hpqy_WGn5.png' ;
+  } else {
+    osImageEl.parentElement.style.width = '800px';
+    codeImageEl.parentElement.style.width = '800px';
+
+    osImageEl.src = '/screenshots/desktop-1.png';
+    codeImageEl.src = 'https://figmage.com/images/oyC9nU-UasjMYPo8Em9VE.png';
+  }
+
+}
+
+</script>
+
+<style>
+  .primary-button {
+      border-radius: 4px;
+      background: #344d81;
+      padding: 10px 10px;
+      color: white;
+      width: fit-content;
+      cursor: pointer;
+    }
+</style>
+
+  <body class="" data-url="{{ .RelPermalink }}" style="background-image: url('/images/capyloon_bg.png'); background-size: cover;">
+    <div class="highlightable">
+        <div id="top-bar-home" style="background: #F2F2EC;min-height: 0rem;">
+            {{ if and (or .IsPage .IsSection) .Site.Params.editURL }}
+              {{ $File := .File }}
+              {{ $Site := .Site }}
+              {{with $File.Path }}
+              <div id="top-github-link">
+                <a class="github-link" title='{{T "Edit-this-page"}}' href="{{ $Site.Params.editURL }}{{ replace $File.Dir "\\" "/" }}{{ $File.LogicalName }}" target="blank">
+                  <i class="fas fa-code-branch"></i>
+                  <span id="top-github-link-text">{{T "Edit-this-page"}}</span>
+                </a>
+              </div>
+              {{ end }}
+            {{ end }}
+            {{$toc := (and (not .Params.disableToc) (not .Params.chapter))}}
+            <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                        <i class="fas fa-bars" style="font-size: x-large;"></i>
+                        </a>
+                    </span>
+                {{ partial "header-logo.html" . }}
+              </div>
+            </div>
+          </div>
+          </div>
+      
+            <div class="body-inner">
+
+            <h2 style="text-align:center; margin-left:10px; margin-right:10px;"> An operating system built with the <b>web.</b></h2>
+
+            <div style="position: relative; height:600px; display: flex; align-items: center; flex-direction: column;"> 
+              
+              <button id="toggle-button" style="margin-bottom:10px; display:flex; align-items: center; gap:4px; border:1px solid #344d81;" onclick="toggleCode()">
+                <p id="toggle-button-text" style="margin:0">See HTML</p>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width:1em; height:1em;">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
+              </svg>
+              </button>
+
+              <div id="os-container" style="position: absolute; width:350px; height:550px; z-index: 10; top:38px; ">
+                <img id="os-image" style="margin:0; width: 100%; height: 100%;" src="/screenshots/mobile-2.png" />
+              </div>
+              <div id="code-container" style="width:350px; height:550px; position: absolute; left:170px; top:38px; z-index: 1; filter: brightness(50%);">
+                <img id="code-image"  style="margin:0; width: 100%; height: 100%;" src="https://figmage.com/images/p4bZDPrykGc6hpqy_WGn5.png" />
+              </div>
+            </div>
+            <div style="font-size:1.3em; text-align:center;">
+            
+             <p>Capyloon runs on a phone, desktop, or anywhere</p> 
+             <p>You can boot straight into it</p>
+             <p>Built with HTML/CSS/JS and Rust</p>
+             <p>Open source. Privacy-first. </p>
+        
+             </div>
+
+             <div style="display:flex; justify-content: center; align-items:center; width:100%; flex-direction: column; width: 100%;">
+              <a href="/quickstart" style="text-decoration: none; margin-top: 10px;" ><div class="primary-button">See Quickstart</div></a>
+            </div>
+
+            <div style="height:1px; background-color: lightgray; width:100%; margin: 48px 0px;"> </div>
+            
+             <div> 
+              <div style="display:flex; justify-content: center; align-items:center; width:100%; flex-direction: column; width: 100%;">
+                <p>Try out <a href="/platforms">device builds</a> for</p>
+                <div style="display:flex; gap:12px;"> 
+                <div style="display:flex; justify-content: center; flex-direction: column;">
+                <div style="height:200px;">
+                  <img alt="pixelphone" style="margin:0; width: 100%; height: 100%;" src="https://figmage.com/images/ZtSwp_ZGadlzoqWkDzZf4.png" />
+                </div>
+                <p style="text-align: center; margin:0">Pixel 6</p>
+              </div>
+              <div style="display:flex; justify-content: center; flex-direction: column;">
+                <div style="height:200px;">
+                  <img alt="pinephone" style="margin:0; width: 100%; height: 100%;" src="https://figmage.com/images/HnmzVEZ9zWl__CRXsFKwv.png" />
+                </div>
+                <p style="text-align: center; margin:0">Pinephone</p>
+              </div>
+              </div>
+              
+               </div>
+             </div>
+        </div>
+            </div>
+     </body>
+
+     {{ partial "footer.html" . }}

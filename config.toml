@@ -3,6 +3,7 @@ languageCode = 'en-us'
 title = 'Capyloon, Reclaim Your Web!'
 # Change the default theme to be use when building the site with Hugo
 theme = "hugo-theme-learn"
+publishDir="./docs"
 
 # For search functionality
 [outputs]
@@ -46,16 +47,7 @@ home = [ "HTML", "RSS", "JSON"]
   ordersectionsby = "weight"
   # Change default color scheme with a variant one. Can be "red", "blue", "green".
   themeVariant = "custom"
-  # Provide a list of custom css files to load relative from the `static/` folder in the site root.
-  custom_css = ["css/foo.css", "css/bar.css"]
   # Change the title separator. Default to "::".
   titleSeparator = "-"
 
   
-[[menu.shortcuts]]
-  name = "<i class='fab fa-github'></i> GitHub repo"  
-  identifier = "ds"
-  url = "https://github.com/capyloon"
-  weight = 10
-
-

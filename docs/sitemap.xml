@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://capyloon.org/quickstart/</loc>
+    <lastmod>2022-12-10T23:55:50+07:00</lastmod>
+  </url><url>
+    <loc>https://capyloon.org/platforms/</loc>
+    <lastmod>2022-12-10T23:57:46+07:00</lastmod>
+  </url><url>
+    <loc>https://capyloon.org/screenshots/desktop/</loc>
+    <lastmod>2022-12-10T23:58:16+07:00</lastmod>
+  </url><url>
+    <loc>https://capyloon.org/packages/</loc>
+    <lastmod>2022-12-10T23:58:16+07:00</lastmod>
+  </url><url>
+    <loc>https://capyloon.org/screenshots/phone/</loc>
+    <lastmod>2022-12-10T23:58:16+07:00</lastmod>
+  </url><url>
+    <loc>https://capyloon.org/screenshots/</loc>
+    <lastmod>2022-12-10T23:58:16+07:00</lastmod>
+  </url><url>
+    <loc>https://capyloon.org/development/architecture/</loc>
+    <lastmod>2022-12-10T23:58:29+07:00</lastmod>
+  </url><url>
+    <loc>https://capyloon.org/development/</loc>
+    <lastmod>2022-12-10T23:58:29+07:00</lastmod>
+  </url><url>
+    <loc>https://capyloon.org/</loc>
+    <lastmod>2022-12-09T19:01:03+07:00</lastmod>
+  </url><url>
+    <loc>https://capyloon.org/categories/</loc>
+  </url><url>
+    <loc>https://capyloon.org/tags/</loc>
+  </url>
+</urlset>

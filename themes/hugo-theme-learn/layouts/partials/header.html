@@ -25,8 +25,15 @@
     {{ range .Site.Params.custom_css -}}
     <link href="{{(printf "%s" .) | relURL}}{{ if $assetBusting }}?{{ now.Unix }}{{ end }}" rel="stylesheet">
     {{- end }}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Average+Sans&family=Inter:wght@200;300;400;500;700;900&family=Lobster&display=swap" rel="stylesheet">
+
 
     <script src="{{"js/jquery-3.3.1.min.js"| relURL}}{{ if $assetBusting }}?{{ now.Unix }}{{ end }}"></script>
+
+    <script type="module" src="{{"js/main.js"| relURL}}{{ if $assetBusting }}?{{ now.Unix }}{{ end }}"></script>
+
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -67,10 +74,14 @@
                           <i class="fas fa-bars"></i>
                         </a>
                     </span>
-                  {{ if $toc }}
+                    {{ if $toc }}
                   <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
                   {{ end }}
-                  <span class="links">
+                    <span class="hide"> 
+                      {{ partial "header-logo.html" . }}
+                    </span>
+              
+                  <span class="links" style="align-self: center;display: flex;align-items: center;height: 100%;">
                  {{$showBreadcrumb := (and (not .Params.disableBreadcrumb) (not .Site.Params.disableBreadcrumb))}}
                  {{if $showBreadcrumb}}
                     {{ template "breadcrumb" dict "page" . "value" .Title }}
