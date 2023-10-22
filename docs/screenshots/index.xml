@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Screenshots on Capyloon, Reclaim Your Web!</title>
+    <link>https://capyloon.org/screenshots/</link>
+    <description>Recent content in Screenshots on Capyloon, Reclaim Your Web!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 10 Dec 2022 23:58:16 +0700</lastBuildDate><atom:link href="https://capyloon.org/screenshots/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Desktop</title>
+      <link>https://capyloon.org/screenshots/desktop/</link>
+      <pubDate>Sat, 10 Dec 2022 23:58:16 +0700</pubDate>
+      
+      <guid>https://capyloon.org/screenshots/desktop/</guid>
+      <description>  .flex-container { flex-direction: row; display: -webkit-flex; display: flex; width: 100%; align-content: center; flex-flow: row wrap; } .flex-item { width: 20%; order: 1; margin: 1em; } @media only screen and (max-width: 600px) { .flex-item { width: max-content; }  Homescreen  Quick Settings  Latest Activity  Installed Apps  Terminal App  Carousel View  Image Processing Plugins  uBlockOrigin Panel  Page Information  Split Screen Mode   </description>
+    </item>
+    
+    <item>
+      <title>Phone</title>
+      <link>https://capyloon.org/screenshots/phone/</link>
+      <pubDate>Sat, 10 Dec 2022 23:58:16 +0700</pubDate>
+      
+      <guid>https://capyloon.org/screenshots/phone/</guid>
+      <description>  .flex-container { flex-direction: row; display: -webkit-flex; display: flex; width: 100%; align-content: center; flex-flow: row wrap; } .flex-item { width: 20%; order: 1; margin: 0em 1em; } @media only screen and (max-width: 600px) { .flex-item { width: max-content; } }  Mobile Lockscreen  Mobile Homescreen  Mobile quick settings  Mobile Latest Activity  Mobile installed apps  Mobile Carousel View  Mobile uBlockOrigin Panel  Mobile Page Information   </description>
+    </item>
+    
+  </channel>
+</rss>

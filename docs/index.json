@@ -1,0 +1,78 @@
+[
+{
+	"uri": "https://capyloon.org/quickstart/",
+	"title": "Quickstart",
+	"tags": [],
+	"description": "",
+	"content": "This quickstart guide is for you to get up and running with Capyloon. If you\u0026rsquo;re looking for a pre-built package, head over to packages.\nCapyloon is broken up into three main repositories:\n  Nutria : This is Capyloon set of Web apps. If you are a front-end developer, you will find everything you need in this repository.\n  Api-Daemon : Non standard apis exposed to the UI. The contentmanager service, written in Rust, is specific to Capyloon. It provides the data management layer.\n  B2G : Boot to Gecko. Gonk based devices. The Pixel 3a and Android Generic System Images are currently supported.\n  Picking a device Currently. the __ is the recommonded platform for using Capyloon, but you can find other support platforms.\nSetting up your environment Step 1: Step 2: Step 3: "
+},
+{
+	"uri": "https://capyloon.org/platforms/",
+	"title": "Platforms",
+	"tags": [],
+	"description": "",
+	"content": "Supported Platforms Capyloon development happens primarily on \u0026hellip;..\nLinux Android MacOSX Lorem Ipsum.\n"
+},
+{
+	"uri": "https://capyloon.org/screenshots/desktop/",
+	"title": "Desktop",
+	"tags": [],
+	"description": "",
+	"content": "  .flex-container { flex-direction: row; display: -webkit-flex; display: flex; width: 100%; align-content: center; flex-flow: row wrap; } .flex-item { width: 20%; order: 1; margin: 1em; } @media only screen and (max-width: 600px) { .flex-item { width: max-content; }  Homescreen  Quick Settings  Latest Activity  Installed Apps  Terminal App  Carousel View  Image Processing Plugins  uBlockOrigin Panel  Page Information  Split Screen Mode   "
+},
+{
+	"uri": "https://capyloon.org/packages/",
+	"title": "Packages",
+	"tags": [],
+	"description": "",
+	"content": "Desktop builds You can download the latest Debian package here.\nDevice builds You can download the latest image here.\nDeveloping Apps Available Apps Desktop Lorem Ipsum.\n"
+},
+{
+	"uri": "https://capyloon.org/screenshots/phone/",
+	"title": "Phone",
+	"tags": [],
+	"description": "",
+	"content": "  .flex-container { flex-direction: row; display: -webkit-flex; display: flex; width: 100%; align-content: center; flex-flow: row wrap; } .flex-item { width: 20%; order: 1; margin: 0em 1em; } @media only screen and (max-width: 600px) { .flex-item { width: max-content; } }  Mobile Lockscreen  Mobile Homescreen  Mobile quick settings  Mobile Latest Activity  Mobile installed apps  Mobile Carousel View  Mobile uBlockOrigin Panel  Mobile Page Information   "
+},
+{
+	"uri": "https://capyloon.org/screenshots/",
+	"title": "Screenshots",
+	"tags": [],
+	"description": "",
+	"content": "See screenshots by platform.\nDesktop\nPhone\nLarge Screen Devices (coming soon)\n"
+},
+{
+	"uri": "https://capyloon.org/development/architecture/",
+	"title": "Architecture",
+	"tags": [],
+	"description": "",
+	"content": "Hi\n"
+},
+{
+	"uri": "https://capyloon.org/development/",
+	"title": "Development",
+	"tags": [],
+	"description": "",
+	"content": "Development Bootstraping Building images Porting to new devices "
+},
+{
+	"uri": "https://capyloon.org/",
+	"title": "Home",
+	"tags": [],
+	"description": "",
+	"content": "Portable electronics don\u0026rsquo;t have to be a blackbox. Imagine an OS where you understood everything. From how things were drawn, to how things are processed.\nThe web, the internet, is that kind of open platform.\nCapyloon is a web-first mobile operating system that takes lovable web technologies to embedded hardware. Security is top of mind. It\u0026rsquo;s fun to build on. And you can target it for a lot more than just phones.\n Lockscreen    Home Screen    Seriously, check out the UI code, it\u0026rsquo;s just HTML/CSS/JS.\nNow you’re probably thinking why?\nOpen The web, and mostly everything built around it, is open. It’s not owned by one company. It\u0026rsquo;s not a proprietary technology. From accessbility, localization and security, a bunch of people talk through these things.\nCapyloon is powered by Gecko (the thing that powers Firefox). And it\u0026rsquo;s open source too. Chip away.\nEasy to Develop You know how easy it is to build for the web? As easy as firing up your browser and editing some code.\nCapyloon is no different. Here\u0026rsquo;s the code for the lockscreen. Want to build experiences for AR glasses, a smartwatch, or even a doorbell, all it takes is some HTML/CSS.\nExperimental Okay, this is us dreaming. But this is an operating system. Well also a browser. Hmm, actually, a rust program. When do you ever get the chance to tweak things from the UI all the way down to the hardware.\nWe have a great framework that gives us so much room to experiment. To really think how devices are connected.\nGetting started You can either use a physical device or the simulator to get started. And yes, Capyloon runs on actual devices.\nHere it is running on Pinephone and Librem 5.\nYou can get up and running by reviewing the Quickstart guide. Or jump straight into packages to download an image.\nJoin Us Do we have it all figured out? Absolutely not. So many things that can be made better.\nThe code is available on github.\nFeel free to join the discussion in our Matrix chat room, or to email us for any inquiry.\n"
+},
+{
+	"uri": "https://capyloon.org/categories/",
+	"title": "Categories",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://capyloon.org/tags/",
+	"title": "Tags",
+	"tags": [],
+	"description": "",
+	"content": ""
+}]
